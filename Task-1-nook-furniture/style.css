@@ -1,0 +1,453 @@
+:root {
+  /* Fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Spectral", serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  /* Font sizes (rem-based) */
+  /* --fs-1: 1.8rem; */
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+  --fs-22: 2.2rem;
+  --fs-28: 2.8rem;
+  --fs-32: 3.2rem;
+  --fs-48: 4.8rem;
+  --fs-64: 6.4rem;
+
+  /* Line heights */
+  --lh-sm: 1.4;
+  --lh-md: 1.6;
+  --lh-lg: 1.8;
+
+  /* Colors */
+  --color-primary: #02494b;
+  --color-secondary: #ffffff;
+  --color-muted: #888888;
+}
+
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Improve text rendering + REM base */
+html {
+  font-size: 62.5%; /* 10px = 1rem */
+}
+
+/* 4. Base body styles */
+body {
+  line-height: 1.5;
+  font-size: 1.2rem; /* = 1px default text */
+  font-family: var(--font-primary);
+}
+
+/* 5. Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Form elements inherit font */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Buttons */
+button {
+  background: none;
+  cursor: pointer;
+}
+
+/* 8. Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 9. Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* utilities class */
+.text-serif {
+  font-family: var(--font-secondary);
+}
+
+.text-sans {
+  font-family: var(--font-primary);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fs-18 {
+  font-size: var(--fs-18);
+}
+.fs-20 {
+  font-size: var(--fs-20);
+}
+.fs-22 {
+  font-size: var(--fs-22);
+}
+.fs-28 {
+  font-size: var(--fs-28);
+}
+.fs-32 {
+  font-size: var(--fs-32);
+}
+.fs-48 {
+  font-size: var(--fs-48);
+}
+.fs-64 {
+  font-size: var(--fs-64);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-white {
+  background-color: var(--color-secondary);
+}
+.container {
+  max-width: 120rem; /* 1200px */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ================== Header Section ================== */
+
+/* ================== Nav ================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  width: 6rem;
+}
+.navbar__logo img {
+  width: 100%;
+}
+.navbar__toggle {
+  border: none;
+}
+.navbar__toggle img {
+  width: 5rem;
+}
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.navbar__actions li {
+  list-style: none;
+}
+
+.navbar__actions a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar__actions a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.navbar__actions img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ================== Hero Section ================== */
+.hero {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* Hero Text */
+.hero__text {
+  text-align: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__text-lg {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-64);
+  font-weight: var(--fw-medium);
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.hero__text-sm {
+  text-align: center;
+  width: 40rem;
+  color: var(--color-muted);
+  line-height: var(--lh-md);
+}
+
+/* Hero Images Grid */
+.hero__img {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Left & Right Cards */
+.hero__img-card {
+  /* border: 1px solid orange; */
+  grid-column: span 2;
+  width: 100%;
+  max-width: 28rem;
+  /* border-radius: 1rem; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.hero__img-card img {
+  width: 100%;
+  display: block;
+  /* border-radius: 1rem; */
+}
+
+/* Card overlay content */
+.hero__img-content {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid red; */
+}
+
+.hero__img-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Center Feature Image */
+.hero__img-feature {
+  grid-column: span 8;
+  width: 100%;
+  height: 40rem;
+  max-width: 600px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.hero__img-logo {
+  position: absolute;
+
+  top: 0;
+}
+.hero__img-feature img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 1024px) {
+  .hero__img {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .hero__img-feature {
+    grid-column: span 2; /* center image takes full width */
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__img {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__img-feature,
+  .hero__img-card {
+    max-width: 100%;
+  }
+
+  .hero__text-lg {
+    font-size: var(--fs-28);
+  }
+
+  .hero__text-sm {
+    font-size: var(--fs-18);
+  }
+}
+
+/* ========== Marquee ============ */
+.marquee-container {
+  width: 100%;
+  overflow: hidden; /* hide scrollbar */
+  /* background-color: #02494b; */
+  padding: 1rem 0;
+}
+
+.marquee {
+  display: flex;
+  gap: 4rem;
+  white-space: nowrap; /* keep items in a line */
+  will-change: transform;
+}
+
+.marquee-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: #6d7373;
+  font-family: var(--font-secondary);
+  font-size: var(--fs-20, 2rem);
+  font-weight: var(--fw-medium, 500);
+  flex-shrink: 0;
+}
+.marquee-item img {
+  width: 2rem;
+  height: 2rem;
+}
+
+@keyframes marqueeAnim {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%); /* scroll half width of content */
+  }
+}
+
+/* ================= Slider Section ================= */
+.slider {
+  padding: 4rem 0;
+}
+
+.slider__component {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  position: relative;
+}
+
+/* ============ slider btn=========== */
+.slider__btn {
+  position: absolute;
+  font-size: 1.4rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}
+button {
+  border: none;
+  outline: none;
+}
+.slider__btn-right {
+}
+.slider__btn--left {
+}
+
+/* ================= Slider Card ================= */
+.slider__card {
+  position: relative;
+  flex: 0 0 30rem; /* all cards take equal width */
+  height: 32rem; /* fixed height for consistency */
+  /* border-radius: 1.2rem; */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image */
+.slider__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Text Overlay */
+.slider__card p {
+  position: absolute;
+  bottom: 1.6rem;
+  left: 1.6rem;
+
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+
+  z-index: 2;
+}
+
+/* Optional dark overlay for better text contrast */
+.slider__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.05));
+  z-index: 1;
+}
+
+/* ================= Hover Effect (Optional) ================= */
+.slider__card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}

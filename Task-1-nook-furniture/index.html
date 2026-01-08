@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <!-- Logo -->
+        <a href="/" class="navbar__logo">
+          <img src="./imgs/logo.png" alt="Nook Furniture logo" />
+        </a>
+
+        <!-- Mobile menu button -->
+        <button class="navbar__toggle">
+          <img src="./imgs/icons/icon__nav.svg" alt="" />
+        </button>
+
+        <!-- Navigation actions -->
+        <ul class="navbar__actions">
+          <li>
+            <a href="#">
+              <img src="./imgs/icons/icon__user.svg" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./imgs/icons/icon__react.svg" alt="" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="./imgs/icons/icon__shopping.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- landing page -->
+      <section class="hero">
+        <!-- background will svg -->
+        <div class="hero__text">
+          <!-- hero text -->
+          <p class="hero__text-lg">
+            Make your environment minimalistic and futuristic
+          </p>
+          <!-- small text -->
+          <p class="hero__text-sm">
+            Transform your closets into functional works of art with closet
+            creations’ custom design solutions.
+          </p>
+        </div>
+
+        <div class="hero__img">
+          <!-- image card 1 left -->
+          <div class="hero__img-card">
+            <img src="./imgs/landing__side.jpg" alt="" />
+            <div class="hero__img-content">
+              <p>Vintage Desk Accessories 2024</p>
+              <span class="hero__img-icon">
+                <img src="./imgs/icon__play.svg" alt="" />
+              </span>
+            </div>
+          </div>
+          <!-- center -->
+          <div class="hero__img-feature">
+            <div class="hero__img-logo">
+              <img src="./imgs/logo__circle-green.svg" alt="" />
+            </div>
+            <img src="./imgs/landing__center.jpg" alt="" />
+          </div>
+          <!-- image 1 right -->
+          <div class="hero__img-card">
+            <img src="./imgs/landing__side.jpg" alt="" />
+            <div class="hero__img-content">
+              <p>Vintage Desk Accessories 2024</p>
+              <span class="hero__img-icon">
+                <img src="./imgs/icon__play.svg" alt="" />
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <section class="marquee-container">
+          <div class="marquee">
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+            <span class="marquee-item"
+              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
+            /></span>
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <section class="slider container">
+      <div class="slider__component">
+        <div class="slider__btn">
+          <button class="slider__btn-left" aria-label="Scroll left">
+            &lt;
+          </button>
+
+          <p>scroll</p>
+
+          <button class="slider__btn-right" aria-label="Scroll right">
+            &gt;
+          </button>
+        </div>
+
+        <div class="slider__card">
+          <img src="./imgs/sofa.jpg" alt="" />
+          <p>sofa</p>
+        </div>
+
+        <div class="slider__card">
+          <img src="./imgs/chair.jpg" alt="" />
+          <p>chair</p>
+        </div>
+
+        <div class="slider__card">
+          <img src="./imgs/accessories.jpg" alt="" />
+          <p>Accessories</p>
+        </div>
+
+        <div class="slider__card">
+          <img src="./imgs/table.jpg" alt="" />
+          <p>table</p>
+        </div>
+
+        <div class="slider__card">
+          <img src="./imgs/accessories.jpg" alt="" />
+          <p>Accessories</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script src="./script.js"></script>
