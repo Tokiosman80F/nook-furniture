@@ -3,168 +3,528 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Nook Furniture - Minimalistic & Futuristic</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
   </head>
   <body>
-    <header>
+    <!-- Header Navigation -->
+    <header class="header">
       <nav class="navbar container">
         <!-- Logo -->
         <a href="/" class="navbar__logo">
-          <img src="./imgs/logo.png" alt="Nook Furniture logo" />
+          <img src="./assets/images/logo.png" alt="Nook Furniture logo" />
         </a>
 
         <!-- Mobile menu button -->
         <button class="navbar__toggle">
-          <img src="./imgs/icons/icon__nav.svg" alt="" />
+          <img src="./assets/images/icon__nav.svg" alt="" />
         </button>
 
         <!-- Navigation actions -->
         <ul class="navbar__actions">
           <li>
             <a href="#">
-              <img src="./imgs/icons/icon__user.svg" alt="" />
+              <img src="./assets/images/icon__user.svg" alt="" />
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="./imgs/icons/icon__react.svg" alt="" />
+              <img src="./assets/images/icon__react.svg" alt="" />
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img src="./imgs/icons/icon__shopping.svg" alt="" />
+              <img src="./assets/images/icon__shopping.svg" alt="" />
             </a>
           </li>
         </ul>
       </nav>
-      <!-- landing page -->
-      <section class="hero">
-        <!-- background will svg -->
-        <div class="hero__text">
-          <!-- hero text -->
-          <p class="hero__text-lg">
-            Make your environment minimalistic and futuristic
-          </p>
-          <!-- small text -->
-          <p class="hero__text-sm">
-            Transform your closets into functional works of art with closet
-            creations’ custom design solutions.
-          </p>
-        </div>
-
-        <div class="hero__img">
-          <!-- image card 1 left -->
-          <div class="hero__img-card">
-            <img src="./imgs/landing__side.jpg" alt="" />
-            <div class="hero__img-content">
-              <p>Vintage Desk Accessories 2024</p>
-              <span class="hero__img-icon">
-                <img src="./imgs/icon__play.svg" alt="" />
-              </span>
-            </div>
-          </div>
-          <!-- center -->
-          <div class="hero__img-feature">
-            <div class="hero__img-logo">
-              <img src="./imgs/logo__circle-green.svg" alt="" />
-            </div>
-            <img src="./imgs/landing__center.jpg" alt="" />
-          </div>
-          <!-- image 1 right -->
-          <div class="hero__img-card">
-            <img src="./imgs/landing__side.jpg" alt="" />
-            <div class="hero__img-content">
-              <p>Vintage Desk Accessories 2024</p>
-              <span class="hero__img-icon">
-                <img src="./imgs/icon__play.svg" alt="" />
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <section class="marquee-container">
-          <div class="marquee">
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-            <span class="marquee-item"
-              >Item 1 <img src="./imgs/icon__star.svg" alt="" srcset=""
-            /></span>
-          </div>
-        </section>
-      </section>
     </header>
 
-    <section class="slider container">
-      <div class="slider__component">
-        <div class="slider__btn">
-          <button class="slider__btn-left" aria-label="Scroll left">
-            &lt;
-          </button>
-
-          <p>scroll</p>
-
-          <button class="slider__btn-right" aria-label="Scroll right">
-            &gt;
-          </button>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Make your environment minimalistic and futuristic</h1>
+          <p>
+            Transform your closets into functional works of art with closet
+            creations' custom design solutions.
+          </p>
         </div>
 
-        <div class="slider__card">
-          <img src="./imgs/sofa.jpg" alt="" />
-          <p>sofa</p>
-        </div>
-
-        <div class="slider__card">
-          <img src="./imgs/chair.jpg" alt="" />
-          <p>chair</p>
-        </div>
-
-        <div class="slider__card">
-          <img src="./imgs/accessories.jpg" alt="" />
-          <p>Accessories</p>
-        </div>
-
-        <div class="slider__card">
-          <img src="./imgs/table.jpg" alt="" />
-          <p>table</p>
-        </div>
-
-        <div class="slider__card">
-          <img src="./imgs/accessories.jpg" alt="" />
-          <p>Accessories</p>
+        <div class="hero-images">
+          <div class="hero-image">
+            <img
+              src="./assets/images/logo-landing.svg"
+              alt=""
+              class="hero-image-logo"
+            />
+            <img
+              src="assets/images/hero-image.svg"
+              alt="Furniture"
+              class="hero-image-landing"
+            />
+          </div>
+          <div class="hero-products">
+            <div class="product-card product-card-right">
+              <div class="product-image">
+                <img
+                  src="assets/images/product-landing.jpg"
+                  alt="Minimal Tulip Chair"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Minimal Tulip Chair 2o24</h3>
+                <img
+                  src="assets/images/arrow-icon.svg"
+                  alt="Arrow"
+                  class="arrow-icon"
+                />
+              </div>
+            </div>
+            <div class="product-card product-card-left">
+              <div class="product-image">
+                <img
+                  src="assets/images/product-landing.jpg"
+                  alt="Vintage Desk Accessories"
+                />
+              </div>
+              <div class="product-info">
+                <h3>Vintage Desk Accessories 2024</h3>
+                <img
+                  src="assets/images/arrow-icon-2.svg"
+                  alt="Arrow"
+                  class="arrow-icon"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Navigation Bar Marquee -->
+    <nav class="nav-bar">
+      <div class="marquee">
+        <div class="marquee__track" id="marqueeTrack">
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Woak Table
+          </span>
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Woak Table
+          </span>
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Organic Fabric
+          </span>
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Vintage Metal
+          </span>
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Modern Chair
+          </span>
+          <span class="nav-item">
+            <img src="./assets/images/star-icon.svg" alt="star" />
+            Mapple Shelf
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Category Cards Section (Slider) -->
+    <section class="category-cards">
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/product-1.svg" alt="Sofa" />
+        </div>
+        <div class="category-overlay">
+          <h3>Sofa</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/product-2.svg" alt="Chairs" />
+        </div>
+        <div class="category-overlay">
+          <h3>Chairs</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/product-3.svg" alt="Accessories" />
+        </div>
+        <div class="category-overlay">
+          <h3>Accessories</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/product-4.svg" alt="Table" />
+        </div>
+        <div class="category-overlay">
+          <h3>Table</h3>
+        </div>
+      </div>
+      <div class="category-card">
+        <div class="category-image">
+          <img src="assets/images/product-4.svg" alt="Table" />
+        </div>
+        <div class="category-overlay">
+          <h3>Table</h3>
+        </div>
+      </div>
+
+      <div class="category-nav">
+        <div class="nav-circle">
+          <button>
+            <img
+              src="assets/images/chevron-left.svg"
+              alt="Previous"
+              onerror="this.style.display='none'"
+            />
+          </button>
+          <span>Scroll</span>
+          <button>
+            <img
+              src="assets/images/chevron-right.svg"
+              alt="Next"
+              onerror="this.style.display='none'"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Collection Section -->
+    <section class="popular-collection">
+      <h2 class="section-title">Popular Collection</h2>
+      <div class="collection-content">
+        <div class="collection-tabs">
+          <div class="tab active" data-tab="sofa">Sofa</div>
+          <div class="tab" data-tab="table">Table</div>
+          <div class="tab" data-tab="chair">Chair</div>
+          <div class="tab" data-tab="accessories">Accessories</div>
+        </div>
+
+        <div class="collection-grid">
+          <div class="collection-row">
+            <!-- sofa = 1-4 -->
+            <div class="collection-item" data-category="sofa">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-1.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+
+            <div class="collection-item" data-category="sofa">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-2.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+
+            <div class="collection-item" data-category="sofa">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-3.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+
+            <div class="collection-item" data-category="sofa">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-4.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="collection-row">
+            <!-- table = 5-8 -->
+            <div class="collection-item" data-category="table">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-5.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+            <div class="collection-item" data-category="table">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-6.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+            <div class="collection-item" data-category="chair">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-7.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+            <div class="collection-item" data-category="accessories">
+              <div class="collection-image">
+                <img
+                  src="assets/images/product-8.svg"
+                  alt="Vintage Single Sofa"
+                />
+              </div>
+              <div class="collection-info">
+                <h3>Vintage Single Sofa 2024</h3>
+                <p class="price">Tk 18,500</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="see-all-btn">
+          See all Collection
+          <img src="assets/images/arrow-up-right.svg" alt="Arrow" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Futura Section -->
+    <section class="futura-section">
+      <div class="futura-content">
+        <div class="futura-left">
+          <div class="futura-text">
+            <h2>Futura designed for<br />Better living</h2>
+            <p>
+              Introducing collections of high-quality furniture that bear all
+              the hallmarkes of British engineering.
+            </p>
+          </div>
+          <a href="#" class="read-more-btn">
+            Read More
+            <img
+              src="assets/images/arrow-up-right.svg"
+              alt="Arrow"
+              onerror="this.style.display='none'"
+            />
+          </a>
+          <div class="futura-stats">
+            <div class="stat-item">
+              <h4>Furniture</h4>
+              <p class="counter" data-target="50">0</p>
+            </div>
+
+            <div class="stat-item">
+              <h4>Decor</h4>
+              <p class="counter" data-target="20">0</p>
+            </div>
+
+            <div class="stat-item">
+              <h4>Finishes</h4>
+              <p class="counter" data-target="800">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="futura-right">
+          <div class="futura-image">
+            <img
+              src="assets/images/futura.png"
+              alt="Furniture Collection"
+              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'608\' height=\'605\'%3E%3Crect width=\'608\' height=\'605\' fill=\'%23D9D9D9\'/%3E%3C/svg%3E'"
+            />
+          </div>
+          <div class="futura-decorative">
+            <div class="decorative-text-2">Explore Now ~</div>
+            <img
+              src="assets/images/decorative-shape-2.svg"
+              alt="Decorative"
+              class="decorative-shape-2"
+              onerror="this.style.display='none'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+      <h2 class="section-title">Why us?</h2>
+      <div class="why-us-grid">
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img
+              src="assets/images/support-icon.svg"
+              alt="24/7 Support"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="why-us-content">
+            <h3>24/7 Support</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit.
+            </p>
+          </div>
+        </div>
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img
+              src="assets/images/shipping-icon.svg"
+              alt="Free Shipping"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="why-us-content">
+            <h3>Free Shipping</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit.
+            </p>
+          </div>
+        </div>
+        <div class="why-us-item">
+          <div class="why-us-icon">
+            <img
+              src="assets/images/support-icon-2.svg"
+              alt="24/7 Support"
+              onerror="this.style.display='none'"
+            />
+          </div>
+          <div class="why-us-content">
+            <h3>24/7 Support</h3>
+            <p>
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-content container">
+        <div class="contact-left">
+          <div class="contact-heading">
+            <h2>Let's work <br /><span>Together</span></h2>
+            <p>
+              Do l have consant to record this meeting gain traction, review,
+              nor game-plan.
+            </p>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="form-input"
+            />
+            <div style="position: relative">
+              <textarea
+                placeholder="Type Your Message"
+                class="form-textarea"
+                maxlength="200"
+              ></textarea>
+              <div class="char-count">0/200</div>
+            </div>
+            <button type="submit" class="submit-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <img
+            src="assets/images/logo.svg"
+            alt="Nook Furniture"
+            class="footer-logo"
+          />
+          <p>
+            Custom furniture for minimalist life. We make beautiful design and
+            sustainable furniture in country
+          </p>
+          <div class="social-icons">
+            <img src="assets/images/social-icons.svg" alt="Social Media" />
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-column">
+            <a href="#">About Us</a>
+            <a href="#">Reviews</a>
+            <a href="#">Financing</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="footer-column">
+            <a href="#">FAQ</a>
+            <a href="#">Careeres</a>
+            <a href="#">Return</a>
+            <a href="#">Shipping</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h3>Free consultation<br />for your furniture?</h3>
+          <button class="contact-btn">Contact Us</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Woodly2022 @ All Rights Reserved</p>
+        <div class="footer-links">
+          <a href="#">Cookies Policy</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-<script src="./script.js"></script>

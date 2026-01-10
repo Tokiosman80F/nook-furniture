@@ -1,21 +1,85 @@
-const marquee = document.querySelector(".marquee");
+const track = document.getElementById("marqueeTrack");
 
-// Duplicate content for infinite scroll
-marquee.innerHTML += marquee.innerHTML;
+track.innerHTML += track.innerHTML;
 
-let speed = 0.5; // pixels per frame
-let x = 0;
+// counnter animation
 
-function animateMarquee() {
-  x -= speed;
+const counters = document.querySelectorAll(".counter");
 
-  // reset scroll to start when fully scrolled
-  if (x <= -marquee.scrollWidth / 2) {
-    x = 0;
-  }
+const animateCounter = (counter) => {
+  const target = +counter.dataset.target;
+  const speed = 80; // lower = faster
 
-  marquee.style.transform = `translateX(${x}px)`;
-  requestAnimationFrame(animateMarquee);
-}
+  const updateCount = () => {
+    const current = +counter.innerText;
+    const increment = Math.ceil(target / speed);
 
-animateMarquee();
+    if (current < target) {
+      counter.innerText = current + increment;
+      requestAnimationFrame(updateCount);
+    } else {
+      counter.innerText = target + "+";
+    }
+  };
+
+  updateCount();
+};
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.6 }
+);
+
+counters.forEach((counter) => observer.observe(counter));
+
+// tab
+const tabs = document.querySelectorAll(".tab");
+const items = document.querySelectorAll(".collection-item");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Toggle active tab
+    tabs.forEach((t) => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const selectedCategory = tab.dataset.tab;
+
+    // Filter items
+    items.forEach((item) => {
+      item.classList.toggle(
+        "hidden",
+        item.dataset.category !== selectedCategory
+      );
+    });
+  });
+});
+
+// slider
+
+const container = document.querySelector(".category-cards");
+const cards = document.querySelectorAll(".category-card");
+const leftBtn = document.querySelector('.nav-circle img[alt="Previous"]');
+const rightBtn = document.querySelector('.nav-circle img[alt="Next"]');
+
+const cardWidth = cards[0].offsetWidth + 24; // card width + gap
+
+rightBtn.addEventListener("click", () => {
+  container.scrollBy({
+    left: cardWidth,
+    behavior: "smooth",
+  });
+});
+
+leftBtn.addEventListener("click", () => {
+  container.scrollBy({
+    left: -cardWidth,
+    behavior: "smooth",
+  });
+});
