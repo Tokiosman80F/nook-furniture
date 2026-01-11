@@ -1,0 +1,61 @@
+/* ==========Resuable component======= */
+.heading-primary{
+    font-size: 6.4rem;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Roslindale', serif;
+    color: var(--text-primary) ;
+    font-weight: 500;
+    letter-spacing: 0%;
+}
+
+/* =========navbar========== */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.navbar__logo img{
+    width: 7.2rem;
+    height: 2.6rem;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+/* ==========Hero============ */
+.hero__content{
+    max-width: 84.6rem;
+    margin: 0 auto;
+    padding: 5.3rem  0 1.9rem 0 ;
+    text-align: center;
+    
+}
+.hero__paragragph{
+    margin: 0 auto;
+    width: 42.9rem;
+    font-family: "Inter", sans-serif;
+    color: var(--text-secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 4rem;   
+}
+
+.hero__products{
+    display: flex;
+    gap:8.1rem;
+}
+.hero__product-card{
+    flex: 0 0 26.9rem;
+    border: 1px solid black;
+}
+.hero__product-main{
+    flex: 0 0 60rem;
+  border: 1px solid black;
+}

@@ -1,0 +1,14 @@
+.container{
+    max-width: 144rem;
+    padding: 0 7rem;
+    margin: 0 auto;
+
+}
+.header{
+    height: 4rem;
+    margin-top: 2.4rem;
+    padding: 0 1.4rem;
+
+}
+.hero{}
+.footer{}

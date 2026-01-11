@@ -1,8 +1,8 @@
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"); */
 
 /* Font Face Declarations */
-@font-face {
+/* @font-face {
   font-family: "Roslindale";
   src: url("https://fonts.googleapis.com/css2?family=Roslindale:wght@400;500;700&display=swap");
   font-weight: 400 700;
@@ -14,10 +14,10 @@
   src: local("Wilkysta"), local("Wilkysta-Regular");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 /* CSS Variables - Colors from Figma */
-:root {
+/* :root {
   --primary-color: #00494a;
   --primary-dark: #02494b;
   --primary-darker: #005f61;
@@ -38,34 +38,33 @@
   --form-bg: #005f61;
   --form-text: #c3c5c6;
   --form-placeholder: #989898;
-  --decorative-text: #d8d8d8;
-}
+} */
 
 /* Reset and Base Styles */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   font-family: "Inter", sans-serif;
   background-color: var(--background);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
-}
+} */
 
 /* Image error handling */
-img {
+/* img {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* Header Navigation */
 /* ================== Nav ================== */
-button {
+/* button {
   background: none;
   cursor: pointer;
 }
@@ -95,9 +94,9 @@ button {
 
 .navbar__actions li {
   list-style: none;
-}
+} */
 
-.navbar__actions a {
+/* .navbar__actions a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +173,7 @@ button {
 
 .header-icons .icon:hover {
   opacity: 0.7;
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -346,15 +345,15 @@ button {
   transform: translate(32px, 21px);
 }
 
-.decorative-shape {
+/* .decorative-shape {
   position: absolute;
   width: 214px;
   height: 198px;
   z-index: 1;
-}
+} */
 
 /* Navigation Bar Marquee */
-.nav-bar {
+/* .nav-bar {
   width: 100%;
   overflow: hidden;
   background: #fff;
@@ -402,10 +401,10 @@ button {
   to {
     transform: translateX(-50%);
   }
-}
+} */
 
 /* Category Cards Section */
-.category-cards {
+/* .category-cards {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -517,10 +516,10 @@ button {
 .nav-circle img {
   width: 24px;
   height: 24px;
-}
+} */
 
 /* Futura Section */
-.futura-section {
+/* .futura-section {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -657,10 +656,10 @@ button {
   width: 152px;
   height: 142px;
   z-index: 1;
-}
+} */
 
 /* Popular Collection Section */
-.popular-collection {
+/* .popular-collection {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -816,10 +815,10 @@ button {
 .see-all-btn img {
   width: 24px;
   height: 24px;
-}
+} */
 
 /* Why Us Section */
-.why-us {
+/* .why-us {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -883,10 +882,10 @@ button {
   line-height: 1.56;
   color: var(--text-light);
   max-width: 350px;
-}
+} */
 
 /* Contact Section */
-.contact-section {
+/* .contact-section {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -901,11 +900,11 @@ button {
   width: 100%;
   max-width: 1300px;
   min-height: 519px;
-  padding: 70px 0;
+  padding: 70px 0; */
   /* align-items: flex-start; */
-}
+/* } */
 
-.contact-left {
+/* .contact-left {
   width: 472px;
 }
 
@@ -929,7 +928,7 @@ button {
   background-size: contain;
   margin-left: 32px;
   vertical-align: middle;
-  /* background-color: #888888; */
+
   left: 60%;
 }
 
@@ -1045,10 +1044,10 @@ button {
 
 .submit-btn:hover {
   background: rgba(255, 255, 255, 0.1);
-}
+} */
 
 /* Footer */
-.footer {
+/* .footer {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -1179,10 +1178,10 @@ button {
   line-height: 2;
   color: var(--text-light);
   text-decoration: none;
-}
+} */
 
 /* Responsive Design */
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .hero,
   .header,
   .nav-bar,
@@ -1272,4 +1271,4 @@ button {
     flex-direction: column;
     gap: 32px;
   }
-}
+} */

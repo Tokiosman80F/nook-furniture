@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nook Furniture - Minimalistic & Futuristic</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Header Navigation -->
-    <header class="header">
-      <nav class="navbar container">
-        <!-- Logo -->
-        <a href="/" class="navbar__logo">
-          <img src="./assets/images/logo.png" alt="Nook Furniture logo" />
-        </a>
 
-        <!-- Mobile menu button -->
-        <button class="navbar__toggle">
-          <img src="./assets/images/icon__nav.svg" alt="" />
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nook Furniture - Minimalistic & Futuristic</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
 
-        <!-- Navigation actions -->
-        <ul class="navbar__actions">
-          <li>
-            <a href="#">
-              <img src="./assets/images/icon__user.svg" alt="" />
-            </a>
-          </li>
+<body>
+  <!-- Header Navigation -->
+  <header class="header container ">
+    <nav class="navbar">
+      <a href="/" class="navbar__logo">
+        <img src="./assets/images/logo.svg" alt="Nook Furniture" />
+      </a>
 
-          <li>
-            <a href="#">
-              <img src="./assets/images/icon__react.svg" alt="" />
-            </a>
-          </li>
 
-          <li>
-            <a href="#">
-              <img src="./assets/images/icon__shopping.svg" alt="" />
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <button class="navbar__btn">
+        <img src="./assets/images/icon__nav.svg" alt="" />
+      </button>
 
-    <!-- Hero Section -->
-    <section class="hero">
+      <ul class="navbar__list">
+        <li><a href="#"><img src="./assets/images/icon__user.svg" alt="" /></a></li>
+        <li><a href="#"><img src="./assets/images/icon__react.svg" alt="" /></a></li>
+        <li><a href="#"><img src="./assets/images/icon__shopping.svg" alt="" /></a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <section class="hero container">
+
+    <div class="hero__content">
+      <h1 class="hero__heading heading-primary">Make your environment minimalistic and futuristic</h1>
+      <p class="hero__paragragph"> Transform your closets into functional works of art with closet
+        creations' custom design solutions.</p>
+    </div>
+
+    <div class="hero__products">
+      <div class="hero__product-card">
+        <img src="/assets/images/product-landing.jpg" alt="">
+        <div class="card__content">
+          <h3>Vintage Desk Accessories 2024</h3>
+          <img src="assets/images/arrow-icon.svg" alt="">
+        </div>
+      </div>
+
+      <div class="hero__product-main">
+        <img src="/assets/images/landing-main.jpg" alt="">
+      </div>
+
+      <div class="hero__product-card">
+        <img src="/assets/images/product-landing.jpg" alt="">
+        <div class="card__content">
+          <h3>Vintage Desk Accessories 2024</h3>
+          <img src="assets/images/arrow-icon.svg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Hero Section -->
+  <!-- <section class="hero">
       <div class="hero-background"></div>
       <div class="hero-content">
         <div class="hero-text">
@@ -111,10 +128,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Navigation Bar Marquee -->
-    <nav class="nav-bar">
+  <!-- Navigation Bar Marquee -->
+  <!-- <nav class="nav-bar">
       <div class="marquee">
         <div class="marquee__track" id="marqueeTrack">
           <span class="nav-item">
@@ -143,10 +160,10 @@
           </span>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
-    <!-- Category Cards Section (Slider) -->
-    <section class="category-cards">
+  <!-- Category Cards Section (Slider) -->
+  <!-- <section class="category-cards">
       <div class="category-card">
         <div class="category-image">
           <img src="assets/images/product-1.svg" alt="Sofa" />
@@ -207,10 +224,10 @@
           </button>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Popular Collection Section -->
-    <section class="popular-collection">
+  <!-- Popular Collection Section -->
+  <!-- <section class="popular-collection">
       <h2 class="section-title">Popular Collection</h2>
       <div class="collection-content">
         <div class="collection-tabs">
@@ -222,7 +239,7 @@
 
         <div class="collection-grid">
           <div class="collection-row">
-            <!-- sofa = 1-4 -->
+          
             <div class="collection-item" data-category="sofa">
               <div class="collection-image">
                 <img
@@ -277,7 +294,7 @@
           </div>
 
           <div class="collection-row">
-            <!-- table = 5-8 -->
+          
             <div class="collection-item" data-category="table">
               <div class="collection-image">
                 <img
@@ -334,10 +351,10 @@
           <img src="assets/images/arrow-up-right.svg" alt="Arrow" />
         </a>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Futura Section -->
-    <section class="futura-section">
+  <!-- Futura Section -->
+  <!-- <section class="futura-section">
       <div class="futura-content">
         <div class="futura-left">
           <div class="futura-text">
@@ -391,10 +408,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Why Us Section -->
-    <section class="why-us">
+  <!-- Why Us Section -->
+  <!-- <section class="why-us">
       <h2 class="section-title">Why us?</h2>
       <div class="why-us-grid">
         <div class="why-us-item">
@@ -446,10 +463,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Contact Section -->
-    <section class="contact-section">
+  <!-- Contact Section -->
+  <!-- <section class="contact-section">
       <div class="contact-content container">
         <div class="contact-left">
           <div class="contact-heading">
@@ -479,10 +496,10 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Footer -->
-    <footer class="footer">
+  <!-- Footer -->
+  <!-- <footer class="footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
@@ -525,6 +542,7 @@
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-    </footer>
-  </body>
+    </footer> -->
+</body>
+
 </html>
