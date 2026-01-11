@@ -641,22 +641,9 @@
   height: 141px;
 }
 
-.decorative-text-2 {
-  font-family: "Wilkysta", serif;
-  font-weight: 400;
-  font-size: 14.25px;
-  line-height: 1.6;
-  color: var(--light-bg);
-  position: absolute;
-  z-index: 2;
-}
 
-.decorative-shape-2 {
-  position: absolute;
-  width: 152px;
-  height: 142px;
-  z-index: 1;
-} */
+
+
 
 /* Popular Collection Section */
 /* .popular-collection {
@@ -901,7 +888,7 @@
   max-width: 1300px;
   min-height: 519px;
   padding: 70px 0; */
-  /* align-items: flex-start; */
+/* align-items: flex-start; */
 /* } */
 
 /* .contact-left {
