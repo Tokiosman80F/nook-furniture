@@ -30,8 +30,15 @@
 }
 /* futura */
 .futura {
-  background-color: var(--color-primary-light-2);
+  max-width: 144rem;
+  margin-top: 20.3rem;
+  background-color: #02494B;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  position: relative;
 }
-
 .footer {
 }
