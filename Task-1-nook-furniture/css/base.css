@@ -4,7 +4,7 @@
   --color-primary: #00494a; /*form and button | futara text | see all collection | tab (Active) | why us icon*/
   --color-primary-light-1: #005f61; /*inside form*/
   --color-primary-light-2: #02494b; /*futura */
-  --color-primary-light-: #283e2e; /* footer */
+  --color-primary-light-3: #283e2e; /* footer */
 
   --text-primary: #303635; /* heading | landing image heading |tab content heading | why us | why us heading | scroll */
   --text-secondary: #5f6060; /* landing - subheading*/
@@ -55,8 +55,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 body {
-  max-width: 1440px;
+  width: 100%;
+  /* max-width: 1440px; */
   margin: 0 auto;
   font-family: "Roslindale", serif;
   font-weight: 400;

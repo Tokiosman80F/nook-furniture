@@ -1,311 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nook Furniture - Minimalistic & Futuristic</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nook Furniture - Minimalistic & Futuristic</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="script.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="/" class="navbar__logo">
+          <img src="./assets/images/logo.svg" alt="Nook Furniture" />
+        </a>
 
-<body>
-  <!-- Header Navigation -->
-  <header class="header">
-    <nav class="navbar container">
-      <a href="/" class="navbar__logo">
-        <img src="./assets/images/logo.svg" alt="Nook Furniture" />
-      </a>
-
-      <button class="navbar__btn">
-        <img src="./assets/images/icon__nav.svg" alt="" />
-      </button>
-
-      <ul class="navbar__list">
-        <li>
-          <a href="#"><img src="./assets/images/icon__user.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./assets/images/icon__react.svg" alt="" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="./assets/images/icon__shopping.svg" alt="" /></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero container">
-    <div class="hero__content">
-      <h1 class="hero__heading heading-primary">
-        Make your environment minimalistic and futuristic
-      </h1>
-      <p class="hero__paragragph">
-        Transform your closets into functional works of art with closet
-        creations' custom design solutions.
-      </p>
-    </div>
-
-    <div class="hero__products">
-      <div class="hero__product-card">
-        <img class="hero__product-image" src="/assets/images/product-landing.jpg" alt="" />
-        <div class="card__content">
-          <h3 class="card__heading">
-            Vintage Desk <br />
-            Accessories 2024
-          </h3>
-          <div>
-            <img class="card__icon" src="assets/images/arrow-icon.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__product-main">
-        <img class="product__logo" src="./assets/images/logo-landing.svg" alt="" />
-
-        <div>
-          <img class="product__main-image" src="/assets/images/landing-main.jpg" alt="" />
-        </div>
-      </div>
-
-      <div class="hero__product-card">
-        <img class="hero__product-image" src="/assets/images/product-landing.jpg" alt="" />
-        <div class="card__content">
-          <h3 class="card__heading">
-            Minimal Tulip <br />
-            Chair 2o24
-          </h3>
-          <div>
-            <img class="card__icon" src="assets/images/arrow-icon.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="marquee">
-    <div class="marquee__track" id="marqueeTrack">
-      <div class="marquee__item">
-        <img src="./assets/images/star-icon.svg" alt="star" />
-        <span>Woak Table</span>
-      </div>
-      <div class="marquee__item">
-        <img src="./assets/images/star-icon.svg" alt="star" />
-        <span>Organic Fabric</span>
-      </div>
-      <div class="marquee__item">
-        <img src="./assets/images/star-icon.svg" alt="star" />
-        <span>Vintage Metal</span>
-      </div>
-      <div class="marquee__item">
-        <img src="./assets/images/star-icon.svg" alt="star" />
-        <span>Modern Chair</span>
-      </div>
-      <div class="marquee__item">
-        <img src="./assets/images/star-icon.svg" alt="star" />
-        <span>Mapple Shelf</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- category slider -->
-  <section class="container">
-    <div class="category">
-      <div class="category__container">
-        <div class="category__card">
-          <img class="category__image" src="/assets/images/category-1.jpg" alt="Sofa" />
-          <h3 class="category__label">Sofa</h3>
-        </div>
-
-        <div class="category__card">
-          <img class="category__image" src="/assets//images/category-2.jpg" alt="Chairs" />
-          <h3 class="category__label">Chairs</h3>
-        </div>
-
-        <div class="category__card">
-          <img class="category__image" src="/assets/images/category-3.jpg" alt="Accessories" />
-          <h3 class="category__label">Accessories</h3>
-        </div>
-
-        <div class="category__card">
-          <img class="category__image" src="/assets/images/category-4.jpg" alt="Table" />
-          <h3 class="category__label">Table</h3>
-        </div>
-      </div>
-
-      <div class="category__scroll-badge">
-        <button class="category__scroll-button">
-          <img src="/assets/images/chevron-left.svg" alt="" />
+        <button class="navbar__btn">
+          <img src="./assets/images/icon__nav.svg" alt="" />
         </button>
-        <span>Scroll</span>
-        <button class="category__scroll-button">
-          <img src="./assets/images/chevron-right.svg" alt="" />
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- ----- Popular Collect ---- -->
-  <section class="container">
-    <h1 class="heading-primary">Popular Choice</h1>
-    <nav class="collection__nav">
-      <ul class="collection__tabs">
-        <li class="tab tab--active">Sofa</li>
-        <li class="tab">Table</li>
-        <li class="tab">Chair</li>
-        <li class="tab">Accessories</li>
-      </ul>
-    </nav>
+        <ul class="navbar__list">
+          <li>
+            <a href="#"><img src="./assets/images/icon__user.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./assets/images/icon__react.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/images/icon__shopping.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero__content">
+        <h1 class="hero__heading heading-primary">
+          Make your environment minimalistic and futuristic
+        </h1>
+        <p class="hero__paragragph">
+          Transform your closets into functional works of art with closet
+          creations' custom design solutions.
+        </p>
+      </div>
 
-    <div class="collection__grid">
-      <!-- product 1-->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-1.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 2 -->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-2.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 3 -->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-3.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 4 -->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-4.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 25-->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-5.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 6-->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-6.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 7 -->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-7.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-      <!-- product 8 -->
-      <div class="product-card">
-        <div class="product-card__image">
-          <img src="/assets/images/product-8.svg" alt="Vintage Single Sofa" />
-        </div>
-        <div class="product-card__info">
-          <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
-          <p class="product-card__price">Tk 18,500</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="collection__footer">
-      <a href="#" class="view-all">See all Collection </a>
-      <img src="/assets/images/right-arrow-icon.svg" alt="" srcset="" />
-    </div>
-  </section>
-
-  <!-- Futura Section -->
-
-  <section class="futura">
-    <div class="futura__container container">
-
-      <div class="futura__content">
-
-        <div class="futura__content-text">
-          <h1 class="futura__heading">Futura designed for Better living</h1>
-          <p class="futura__description">
-            Introducing collections of high-quality furniture that bear all the hallmarks of British engineering.
-          </p>
-          <div class="futura__link-wrapper">
-            <a href="#" class="futura__link">Read More </a>
-            <img src="./assets/images/arrow-up-right.svg" alt="">
+      <div class="hero__products">
+        <div class="hero__product-card">
+          <img
+            class="hero__product-image"
+            src="/assets/images/product-landing.jpg"
+            alt=""
+          />
+          <div class="card__content">
+            <h3 class="card__heading">
+              Vintage Desk <br />
+              Accessories 2024
+            </h3>
+            <div class="card__icon-container">
+              <img
+                class="card__icon"
+                src="assets/images/arrow-icon.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
-        <div class="futura__counter-box">
-          <div class="futura__counter-item">
-            <span class="futura__counter-label">Furniture</span>
-            <span class="futura__counter-number">50+</span>
+        <div class="hero__product-main">
+          <img
+            class="product__logo"
+            src="./assets/images/logo-landing.svg"
+            alt=""
+          />
+
+          <div>
+            <img
+              class="product__main-image"
+              src="/assets/images/landing-main.jpg"
+              alt=""
+            />
           </div>
-          <div class="futura__counter-item">
-            <span class="futura__counter-label">Decor</span>
-            <span class="futura__counter-number">20+</span>
-          </div>
-          <div class="futura__counter-item">
-            <span class="futura__counter-label">Finishes</span>
-            <span class="futura__counter-number">800+</span>
+        </div>
+
+        <div class="hero__product-card">
+          <img
+            class="hero__product-image"
+            src="/assets/images/product-landing.jpg"
+            alt=""
+          />
+          <div class="card__content">
+            <h3 class="card__heading">
+              Minimal Tulip <br />
+              Chair 2o24
+            </h3>
+            <div class="card__icon-container">
+              <img
+                class="card__icon"
+                src="assets/images/arrow-icon.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="explore-now-badge">
-        <img src="./assets/images/logo-btn.svg" alt="">
-      </div>
+    <!-- Marquee -->
 
-      <div class="futura__image-grid">
-        <div class="futura__image-col futura__image-col--left">
-          <img src="./assets/images/futura__image.png" alt="Furniture layout">
+    <div class="marquee">
+      <div class="marquee__track" id="marqueeTrack">
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Woak Table</span>
         </div>
-        <div class="futura__image-col futura__image-col--right">
-          <img src="./assets/images/futura__image.png" alt="Furniture layout">
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Organic Fabric</span>
         </div>
-
-
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Vintage Metal</span>
+        </div>
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Woak Table</span>
+        </div>
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Organic Fabric</span>
+        </div>
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Vintage Metal</span>
+        </div>
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Modern Chair</span>
+        </div>
+        <div class="marquee__item">
+          <img src="./assets/images/star-icon.svg" alt="star" />
+          <span>Mapple Shelf</span>
+        </div>
       </div>
-
-
     </div>
-  </section>
 
-  
+    <!-- category slider -->
+    <section class="container">
+      <div class="category">
+        <div class="category__container">
+          <div class="category__card">
+            <img
+              class="category__image"
+              src="/assets/images/category-1.jpg"
+              alt="Sofa"
+            />
+            <h3 class="category__label">Sofa</h3>
+          </div>
 
-    <!-- Why Us Section --> 
-   <section class="why-us container">
+          <div class="category__card">
+            <img
+              class="category__image"
+              src="/assets//images/category-2.jpg"
+              alt="Chairs"
+            />
+            <h3 class="category__label">Chairs</h3>
+          </div>
+
+          <div class="category__card">
+            <img
+              class="category__image"
+              src="/assets/images/category-3.jpg"
+              alt="Accessories"
+            />
+            <h3 class="category__label">Accessories</h3>
+          </div>
+
+          <div class="category__card">
+            <img
+              class="category__image"
+              src="/assets/images/category-4.jpg"
+              alt="Table"
+            />
+            <h3 class="category__label">Table</h3>
+          </div>
+
+          <div class="category__card">
+            <img
+              class="category__image"
+              src="/assets/images/category-1.jpg"
+              alt="Sofa"
+            />
+            <h3 class="category__label">Sofa</h3>
+          </div>
+        </div>
+
+        <div class="category__scroll-badge">
+          <button class="category__scroll-button">
+            <img src="/assets/images/chevron-left.svg" alt="" />
+          </button>
+          <span>Scroll</span>
+          <button class="category__scroll-button">
+            <img src="./assets/images/chevron-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----- Popular Collect ---- -->
+    <section class="container">
+      <h1 class="heading-primary">Popular Choice</h1>
+      <nav class="collection__nav">
+        <ul class="collection__tabs">
+          <li class="tab tab--active" data-category="sofa">Sofa</li>
+          <li class="tab" data-category="table">Table</li>
+          <li class="tab" data-category="chair">Chair</li>
+          <li class="tab" data-category="accessories">Accessories</li>
+        </ul>
+      </nav>
+
+      <div class="collection__grid">
+        <div class="product-card | product-1" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-1.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-2" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-2.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-3" data-category="table">
+          <div class="product-card__image">
+            <img src="/assets/images/product-3.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-4" data-category="table">
+          <div class="product-card__image">
+            <img src="/assets/images/product-4.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-5" data-category="chair">
+          <div class="product-card__image">
+            <img src="/assets/images/product-5.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-6" data-category="chair">
+          <div class="product-card__image">
+            <img src="/assets/images/product-6.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-7" data-category="accessories">
+          <div class="product-card__image">
+            <img src="/assets/images/product-7.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-8" data-category="accessories">
+          <div class="product-card__image">
+            <img src="/assets/images/product-8.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-1" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-1.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-2" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-2.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-1" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-1.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-2" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-2.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-1" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-1.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+
+        <div class="product-card | product-2" data-category="sofa">
+          <div class="product-card__image">
+            <img src="/assets/images/product-2.svg" alt="Vintage Single Sofa" />
+          </div>
+          <div class="product-card__info">
+            <h4 class="product-card__title">Vintage Single Sofa 2024</h4>
+            <p class="product-card__price">Tk 18,500</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="collection__footer">
+        <a href="#" class="view-all">See all Collection </a>
+        <img src="/assets/images/right-arrow-icon.svg" alt="" srcset="" />
+      </div>
+    </section>
+
+    <!-- Futura Section -->
+    <section class="futura">
+      <div class="futura__container container">
+        <div class="futura__content">
+          <div class="futura__content-text">
+            <h1 class="futura__heading">Futura designed for Better living</h1>
+            <p class="futura__description">
+              Introducing collections of high-quality furniture that bear all
+              the hallmarks of British engineering.
+            </p>
+            <div class="futura__link-wrapper">
+              <a href="#" class="futura__link">Read More </a>
+              <img src="./assets/images/arrow-up-right.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="futura__counter-box">
+            <img
+              class="futura__counter-bgTop"
+              src="./assets/images/vector-landing.svg"
+              alt=""
+            />
+
+            <img
+              class="futura__counter-bgDown"
+              src="./assets/images/vector-landing.svg"
+              alt=""
+            />
+
+            <div class="futura__counter-item">
+              <span class="futura__counter-label">Furniture</span>
+              <span class="futura__counter-number">50+</span>
+            </div>
+            <div class="futura__counter-item">
+              <span class="futura__counter-label">Decor</span>
+              <span class="futura__counter-number">20+</span>
+            </div>
+            <div class="futura__counter-item">
+              <span class="futura__counter-label">Finishes</span>
+              <span class="futura__counter-number">800+</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="explore-now-badge">
+          <img src="./assets/images/logo-btn.svg" alt="" />
+        </div>
+
+        <div class="futura__image-grid">
+          <div class="futura__image-col futura__image-col--left">
+            <img
+              src="./assets/images/futura__image.png"
+              alt="Furniture layout"
+            />
+          </div>
+          <div class="futura__image-col futura__image-col--right">
+            <img
+              src="./assets/images/futura__image.png"
+              alt="Furniture layout"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us container">
       <h2 class="heading-primary">Why us?</h2>
       <div class="why-us-grid">
         <div class="why-us-item">
@@ -357,44 +493,45 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
-  <!-- Contact Section -->
-
-   <section class="contact container">
-      <div class="contact-content ">
-        <div class="contact-left">
-          <div class="contact-heading">
-            <h2>Let's work <br /><span>Together</span></h2>
-            <p>
-              Do l have consant to record this meeting gain traction, review,
-              nor game-plan.
-            </p>
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-left">
+            <div class="contact-heading">
+              <h2>Let's work <br /><span>Together</span></h2>
+              <p>
+                Do l have consant to record this meeting gain traction, review,
+                nor game-plan.
+              </p>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form class="contact-form">
+              <input
+                type="email"
+                placeholder="Enter Your Email"
+                class="form-input"
+              />
+              <div style="position: relative">
+                <textarea
+                  placeholder="Type Your Message"
+                  class="form-textarea"
+                  maxlength="200"
+                ></textarea>
+                <div class="char-count">0/200</div>
+              </div>
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
           </div>
         </div>
-        <div class="contact-right">
-          <form class="contact-form">
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              class="form-input"
-            />
-            <div style="position: relative">
-              <textarea
-                placeholder="Type Your Message"
-                class="form-textarea"
-                maxlength="200"
-              ></textarea>
-              <div class="char-count">0/200</div>
-            </div>
-            <button type="submit" class="submit-btn">Send</button>
-          </form>
-        </div>
       </div>
-    </section> 
+    </section>
 
-  <!-- Footer -->
-   <footer class=" ">
+    <!-- Footer -->
+    <footer class="footer">
       <div class="footer-content">
         <div class="footer-left">
           <img
@@ -437,7 +574,6 @@
           <a href="#">Privacy Policy</a>
         </div>
       </div>
-    </footer> 
-</body>
-
+    </footer>
+  </body>
 </html>

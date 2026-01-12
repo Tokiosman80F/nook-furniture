@@ -1,8 +1,19 @@
 .container {
+  width: 100%;
   max-width: 144rem;
   padding: 0 7rem;
   margin: 0 auto;
 }
+
+@media (max-width: 976px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0;
+  }
+}
+
 .header {
   height: 4rem;
   margin-top: 2.4rem;
@@ -16,7 +27,7 @@
 .marquee {
   width: 100%;
   overflow: hidden; /* Hide the overflow of the track */
-
+  display: flex;
   border-bottom: 1px solid var(--color-marquee);
   padding: 2.4rem 0;
   /* background-color: red; */
@@ -30,15 +41,13 @@
 }
 /* futura */
 .futura {
-  max-width: 144rem;
+  /* max-width: 144rem; */
   margin-top: 20.3rem;
-  background-color: #02494B;
-  color: #FFFFFF;
+  background-color: #02494b;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   position: relative;
-}
-.footer {
 }
