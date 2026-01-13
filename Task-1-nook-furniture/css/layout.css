@@ -48,3 +48,11 @@
   justify-content: center;
   font-family: "Inter", sans-serif;
 }
+.why-us {
+  padding: 12rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8.8rem;
+  background: var(--background);
+}

@@ -3,7 +3,7 @@
 /* =============================================== */
 .heading-primary {
   font-size: 6.4rem;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   text-align: center;
   font-family: "Roslindale", serif;
   color: var(--text-primary);
@@ -49,7 +49,7 @@
   color: var(--text-secondary);
   font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   margin-top: 4rem;
 }
 
@@ -123,7 +123,7 @@
 .card__heading {
   flex: 0 0 21.8rem;
   font-size: 2rem;
-  line-height: 2.9;
+  /* line-height: 2.9; */
   font-weight: 400;
 }
 
@@ -153,7 +153,7 @@
   align-items: center;
   gap: 2.4rem;
   font-size: 2.4rem;
-  line-height: 2rem;
+  /* line-height: 2; */
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -229,7 +229,7 @@
   color: #fff;
   font-family: "Roslindale";
   font-size: 2.8rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   font-weight: 400;
 }
 
@@ -308,7 +308,7 @@
   padding: 1rem 0.5rem;
   cursor: pointer;
   font-size: 1.8rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
 }
 
 .tab--active {
@@ -360,7 +360,7 @@
   font-family: "Roslindale";
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2.9rem;
+  /* line-height: 2.9; */
   margin-bottom: 1.4rem;
   letter-spacing: 0;
   color: var(--text-primary);
@@ -369,7 +369,7 @@
 .product-card__price {
   font-family: "Roslindale";
   font-size: 2rem;
-  line-height: 2.9rem;
+  /* line-height: 2.9; */
   font-weight: 400;
   letter-spacing: 0;
   color: var(--color-tab-subheading);
@@ -394,7 +394,7 @@
   border-bottom: 2px solid var(--color-primary);
   font-size: 1.8rem;
   font-family: "Inter";
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
 }
 
 /* Update your base product-card to be more flexible */
@@ -446,7 +446,7 @@
   font-family: "Roslindale", serif;
   font-weight: 700;
   font-size: 5.6rem;
-  line-height: 140%;
+  /* line-height: 1.4; */
   letter-spacing: 0%;
   margin-bottom: 3.2rem;
 }
@@ -455,7 +455,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   letter-spacing: 0%;
   margin-bottom: 2.4rem;
   color: #f7f8f7;
@@ -474,7 +474,7 @@
   font-weight: 500;
   font-size: 1.8rem;
   /* Using px to match your initial spec */
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -528,7 +528,7 @@
 
 .futura__counter-label {
   font-size: 2.4rem;
-  line-height: 4rem;
+  /* line-height: 4; */
   font-weight: 400;
 }
 
@@ -536,7 +536,7 @@
   font-family: "Roslindale", serif;
   font-weight: 400;
   font-size: 4rem;
-  line-height: 5.6rem;
+  /* line-height: 5.6; */
   letter-spacing: 0%;
 }
 
@@ -586,14 +586,6 @@
 /* =============================================== */
 /* ====================WHY US SECTION============= */
 /* =============================================== */
-.why-us {
-  padding: 120rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8.8rem;
-  background: var(--background);
-}
 
 .why-us-grid {
   display: flex;
@@ -637,7 +629,7 @@
   font-family: "Roslindale", serif;
   font-weight: 400;
   font-size: 2.4rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   color: var(--text-primary);
 }
 
@@ -645,7 +637,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  /* line-height: 2.8; */
   color: var(--text-gray-1);
   max-width: 35rem;
 }
@@ -675,7 +667,7 @@
   font-family: "Roslindale", serif;
   font-weight: 400;
   font-size: 7.2rem;
-  line-height: 8.8rem;
+  /* line-height: 8.8; */
   color: #f4f5f5;
   margin-bottom: 2.4rem;
 }
@@ -722,7 +714,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   letter-spacing: 0%;
   color: #d8d8d8;
 }
@@ -746,7 +738,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  /* line-height: 2.8; */
   padding: 1.6rem 3.2rem;
   width: 100%;
   box-sizing: border-box;
@@ -778,7 +770,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 1.2rem;
+  /* line-height: 1.2; */
   color: #989898;
   pointer-events: none;
 }
@@ -792,7 +784,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   cursor: pointer;
   padding: 1.5rem 6rem;
   display: flex;
@@ -840,7 +832,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  /* line-height: 2.8; */
   color: var(--text-footer);
   margin-bottom: 5.2rem;
 }
@@ -872,7 +864,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  /* line-height: 2.8; */
   color: var(--text-gray-1);
   text-decoration: none;
   letter-spacing: 0%;
@@ -888,7 +880,7 @@
   font-family: "Roslindale", serif;
   font-weight: 500;
   font-size: 3.2rem;
-  line-height: 4.6rem;
+  /* line-height: 4.6; */
   color: var(--color-primary-light-3);
   letter-spacing: 0%;
 }
@@ -901,7 +893,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   cursor: pointer;
   padding: 1.5rem 5.976rem;
   box-sizing: border-box;
@@ -928,7 +920,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   color: var(--text-footer);
   letter-spacing: 0%;
 }
@@ -943,7 +935,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 3.2rem;
+  /* line-height: 3.2; */
   color: var(--text-gray-1);
   letter-spacing: 0%;
 }
