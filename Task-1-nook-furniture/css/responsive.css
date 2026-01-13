@@ -1,0 +1,646 @@
+/* ==== RESPONSIVE === */
+@media (max-width: 650px) {
+  html {
+    /* 8px */
+    font-size: 50%;
+  }
+}
+
+/* =============================================== */
+/* ====================HERO SECTION=============== */
+/* =============================================== */
+@media (max-width: 1300px) {
+  .hero__product-card {
+    flex: 0 1 20rem;
+    width: auto;
+  }
+  .card__content {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+  }
+  .card__heading {
+    /* border: 1px solid; */
+    padding: 0;
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .card__icon-container {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: flex-end; /* Align icon to the right */
+  }
+  .card__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+  }
+  .hero__product-main {
+    flex: 0 1 40rem;
+    width: 40rem;
+  }
+  .collection__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    column-gap: 1.2rem;
+    row-gap: 2.4rem;
+    justify-content: center;
+    margin: 4.8rem 0;
+  }
+  .product-card {
+    width: 25rem;
+    height: 49.7rem;
+  }
+  .product-card__image {
+    width: 24rem;
+    height: 40rem;
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero__products {
+    flex-wrap: wrap; /* Allows cards to move to the next "row" */
+    justify-content: center;
+    gap: 3rem 2rem; /* Adds vertical spacing between the main image and cards */
+  }
+
+  .hero__product-main {
+    order: -1; /* Ensures the main image stays at the top */
+    flex: 0 0 100%; /* Forces it to take full width */
+    width: 100%;
+  }
+
+  .hero__product-card {
+    /* We subtract the gap so they fit perfectly side-by-side */
+    flex: 0 0 calc(50% - 1rem);
+    width: calc(50% - 1rem);
+    margin: 0; /* Clear previous margins */
+  }
+
+  .card__heading {
+    font-size: 1.6rem; /* Slightly smaller text for mobile */
+    flex: 0 0 80%;
+  }
+  .product__logo {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .hero__paragragph {
+    font-size: 1.2rem;
+  }
+
+  .marquee__item img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+/* =============================================== */
+/* ==================== SLIDER =============== */
+/* =============================================== */
+
+@media (max-width: 1400px) {
+  .category__container {
+    justify-content: center; /* Centers cards if there is extra space */
+    gap: 2rem;
+  }
+
+  .category__card {
+    flex: 0 0 28rem; /* Slightly smaller cards */
+    height: 38rem;
+  }
+}
+
+/* Desktop / Tablet (1200px) */
+@media (max-width: 1200px) {
+  .category__container {
+    overflow-x: auto; /* Enable horizontal touch scroll */
+    padding-bottom: 3rem; /* Space for a scrollbar if visible */
+    scroll-snap-type: x mandatory; /* Smooth snapping effect */
+    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+
+  /* Hide scrollbar for Chrome/Safari */
+  .category__container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category__card {
+    flex: 0 0 30.7rem; /* Keep original size but scrollable */
+    scroll-snap-align: start;
+  }
+
+  .category__scroll-badge {
+    width: 12rem;
+    height: 12rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet (986px) */
+@media (max-width: 986px) {
+  .category__card {
+    flex: 0 0 26rem; /* Smaller cards for tablet */
+    height: 34rem;
+  }
+
+  .category__label {
+    font-size: 2.4rem;
+    height: 10rem;
+  }
+}
+
+/* Mobile (850px) */
+@media (max-width: 850px) {
+  .category__container {
+    gap: 1.6rem;
+  }
+
+  .category__card {
+    flex: 0 0 22rem; /* Even smaller cards */
+    height: 30rem;
+  }
+
+  /* Hide the scroll badge on small mobile to clear the view */
+  .category__scroll-badge {
+    /* Scale down the badge so it fits small screens */
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.4rem;
+    gap: 0.5rem;
+  }
+  .category__scroll-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .category__label {
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+}
+/* =============================================== */
+/* ==================== TAB =============== */
+/* =============================================== */
+@media (max-width: 1300px) {
+  .collection__grid {
+    /* Switch to 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100rem;
+    margin: 4.8rem auto;
+    padding: 0 2rem;
+  }
+}
+
+/* Mobile / Small Tablet (850px) */
+@media (max-width: 850px) {
+  .collection__nav {
+    width: 90%; /* Let the nav expand */
+  }
+
+  .collection__tabs {
+    gap: 2rem; /* Reduce spacing between tabs */
+  }
+
+  .tab {
+    font-size: 1.6rem;
+  }
+
+  .collection__grid {
+    /* Switch to 2 columns */
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+  }
+
+  .product-card__image {
+    height: 30rem; /* Slightly shorter images on smaller screens */
+  }
+
+  .product-card__title,
+  .product-card__price {
+    font-size: 1.8rem; /* Scale down typography */
+  }
+}
+
+/* Extra Small Mobile (Optional - 480px) */
+@media (max-width: 480px) {
+  .collection__grid {
+    /* Switch to 1 column */
+    grid-template-columns: 1fr;
+    padding: 0 4rem;
+  }
+}
+
+/* =============================================== */
+/* ==================== FUTURA SECTION=============== */
+/* =============================================== */
+
+/* --- Desktop Adjustments (1300px) --- */
+@media (max-width: 1300px) {
+  .futura__container {
+    padding: 10rem 2rem;
+    gap: 3rem;
+  }
+
+  .futura__image-grid {
+    width: 50rem; /* Scaling down the grid slightly */
+    /* height: 50rem; */
+  }
+
+  .futura__image-col img {
+    width: calc(50rem);
+  }
+  .explore-now-badge {
+    width: 12rem;
+    height: 12rem;
+    top: 1rem;
+    right: 2rem;
+  }
+  .explore-now-badge img {
+    width: 100%;
+  }
+}
+
+/* --- Tablet / Large Screen (986px) --- */
+@media (max-width: 1200px) {
+  .futura__container {
+    flex-direction: column-reverse; /* Stack text and images vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .futura__content {
+    flex: unset;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .futura__content-text {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .futura__link-wrapper {
+    justify-content: center;
+  }
+
+  .futura__image-grid {
+    width: 100%; /* Grid takes full width */
+    max-width: 70rem;
+    height: 55rem;
+  }
+
+  .futura__image-col img {
+    width: 100%; /* Match parent width for seamless split */
+  }
+
+  .explore-now-badge {
+    width: 12rem;
+    height: 12rem;
+    top: 0rem;
+    right: 2rem;
+  }
+  .explore-now-badge img {
+    width: 100%;
+  }
+}
+
+/* --- Small Tablet (850px) --- */
+@media (max-width: 850px) {
+  .futura__heading {
+    font-size: 4.2rem;
+  }
+
+  .futura__counter-box {
+    gap: 4rem;
+    padding: 3rem;
+  }
+}
+
+/* --- Mobile / Small Screen (650px) --- */
+@media (max-width: 650px) {
+  .futura__container {
+    padding: 6rem 1.5rem;
+  }
+
+  .futura__heading {
+    font-size: 3.6rem;
+  }
+
+  .futura__counter-box {
+    width: 100%;
+  }
+
+  .futura__image-col img {
+    width: 100%;
+  }
+}
+
+/* =============================================== */
+/* ====================WHY US SECTION=============== */
+/* =============================================== */
+
+/* Tablet / Small Laptop (1300px) */
+@media (max-width: 1300px) {
+  .why-us {
+    padding: 8rem 2rem; /* Reduced vertical padding */
+    gap: 6rem;
+  }
+
+  .why-us-grid {
+    gap: 4rem; /* Significantly reduced the 125px gap */
+    width: 100%;
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+  }
+
+  .why-us-item {
+    flex: 1; /* Items will share space equally */
+    max-width: 30rem;
+  }
+}
+
+/* Mobile / Small Tablet (850px) */
+@media (max-width: 850px) {
+  .why-us {
+    padding: 6rem 2rem;
+    gap: 4rem;
+  }
+
+  .why-us-grid {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 5rem; /* Vertical spacing between stacked items */
+  }
+
+  .why-us-item {
+    max-width: 45rem; /* Allow items to be a bit wider when stacked */
+  }
+
+  .why-us-icon {
+    width: 10rem; /* Slightly smaller icons for mobile */
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .why-us-content h3 {
+    font-size: 2.2rem;
+  }
+
+  .why-us-content p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* =============================================== */
+/* ====================CONTACT FORM SECTION=============== */
+/* =============================================== */
+
+/* Desktop / Tablet (1300px) */
+@media (max-width: 1300px) {
+  .contact {
+    padding: 6rem 4rem;
+  }
+
+  .contact-content {
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .contact-heading h2 {
+    font-size: 5.6rem;
+    line-height: 1.2rem;
+  }
+
+  /* Adjust stars for smaller heading */
+  .contact-heading h2::before {
+    left: 70%;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@media (max-width: 976px) {
+  /* --- Hero Section --- */
+  .hero__products {
+    gap: 4rem;
+  }
+
+  .hero__product-main {
+    flex: 0 1 60rem; /* Shrink the main image slightly */
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  .hero__product-card {
+    flex: 0 1 18rem; /* Shrink side cards */
+  }
+
+  /* --- Collection Grid --- */
+  .collection__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 0 3rem;
+  }
+
+  /* --- Why Us Section --- */
+  .why-us-grid {
+    gap: 3rem;
+  }
+
+  .why-us-item {
+    max-width: 28rem;
+  }
+
+  /* --- Contact Section --- */
+  .contact-content {
+    gap: 3rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 5rem;
+    line-height: 1.1rem;
+  }
+
+  /* Adjusting the star icon position for the heading */
+  .contact-heading h2::before {
+    left: 70%;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* Tablet / Large Mobile (850px) */
+@media (max-width: 850px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex: 0 1 100%;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 4.8rem;
+  }
+
+  .contact-heading h2 span {
+    margin-left: 0; /* Resetting the forced margin */
+    display: block;
+  }
+
+  /* Hide or reposition stars if they overlap text too much */
+  .contact-heading h2::before,
+  .contact-heading h2 span::before {
+    display: none;
+  }
+
+  .submit-btn {
+    align-self: center; /* Center button in stacked layout */
+  }
+}
+
+/* Mobile (650px) */
+@media (max-width: 650px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 3.8rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-heading h2 {
+    font-size: 3.2rem;
+  }
+
+  .contact-heading p {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+/* =============================================== */
+/* ====================HERO SECTION=============== */
+/* =============================================== */
+
+@media (max-width: 1300px) {
+  .footer {
+    padding: 6.5rem 4rem 4rem;
+  }
+
+  .footer-left {
+    margin-right: 4rem;
+    width: 30rem;
+  }
+
+  .footer-middle {
+    margin-right: 4rem;
+    gap: 6rem;
+  }
+
+  .footer-right {
+    width: auto;
+  }
+}
+
+/* Tablet (976px) */
+@media (max-width: 976px) {
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  .footer-left {
+    flex: 0 0 100%;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left p {
+    max-width: 50rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-middle {
+    flex: 1;
+    margin-right: 0;
+    justify-content: flex-start;
+  }
+
+  .footer-right {
+    flex: 1;
+    align-items: flex-start;
+  }
+}
+
+/* Small Tablet / Mobile (850px) */
+@media (max-width: 850px) {
+  .footer-content {
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-middle {
+    gap: 8rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-right {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-right h3 {
+    font-size: 2.8rem;
+    line-height: 1.2rem;
+  }
+
+  .contact-btn {
+    align-self: center; /* Center button on mobile */
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse; /* Put Copyright at the bottom */
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 3rem;
+  }
+}

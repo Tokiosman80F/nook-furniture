@@ -1,4 +1,6 @@
-/* ==========Resuable component======= */
+/* =============================================== */
+/* ====================RESUABLE COMPOENENT======== */
+/* =============================================== */
 .heading-primary {
   font-size: 6.4rem;
   line-height: 1.2;
@@ -9,7 +11,9 @@
   letter-spacing: 0%;
 }
 
-/* =========navbar========== */
+/* =============================================== */
+/* ====================NAV BAR SECTION============ */
+/* =============================================== */
 .navbar {
   display: flex;
   align-items: center;
@@ -28,7 +32,9 @@
   gap: 2.6rem;
 }
 
-/* ==========Hero============ */
+/* =============================================== */
+/* ====================HERO SECTION=============== */
+/* =============================================== */
 .hero__content {
   max-width: 84.6rem;
   margin: 0 auto;
@@ -50,8 +56,6 @@
 .hero__products {
   width: 100%;
   display: flex;
-  /* gap: 8.1rem;
-  border: 1px solid; */
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -119,7 +123,7 @@
 .card__heading {
   flex: 0 0 21.8rem;
   font-size: 2rem;
-  line-height: 2.9rem;
+  line-height: 2.9;
   font-weight: 400;
 }
 
@@ -128,154 +132,30 @@
   size: 2.8rem;
 }
 
-@media (max-width: 1300px) {
-  .hero__product-card {
-    flex: 0 1 20rem;
-    width: auto;
-    /* border: 1px solid; */
-  }
-  .card__content {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    /* background-color: red; */
-  }
-  .card__heading {
-    /* border: 1px solid; */
-    padding: 0;
-    /* background-color: #b6c5c5; */
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-  .card__icon-container {
-    flex: 0 0 30%;
-    display: flex;
-    justify-content: flex-end; /* Align icon to the right */
-  }
-  .card__icon {
-    /* Ensure the image inside the icon container fits properly */
-    width: 2.5rem;
-    height: 2.5rem;
-    object-fit: contain;
-  }
-  .hero__product-main {
-    flex: 0 1 40rem;
-    width: 40rem;
-  }
-  .collection__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 25rem);
-    column-gap: 1.2rem;
-    row-gap: 2.4rem;
-    justify-content: center;
-    margin: 4.8rem 0;
-  }
-  .product-card {
-    width: 25rem;
-    height: 49.7rem;
-  }
-  .product-card__image {
-    width: 24rem;
-    height: 400px;
-    background-color: #f9f9f9;
-    margin-bottom: 2rem;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 850px) {
-  .hero__products {
-    flex-wrap: wrap; /* Allows cards to move to the next "row" */
-    justify-content: center;
-    gap: 3rem 2rem; /* Adds vertical spacing between the main image and cards */
-  }
-
-  .hero__product-main {
-    order: -1; /* Ensures the main image stays at the top */
-    flex: 0 0 100%; /* Forces it to take full width */
-    width: 100%;
-    height: auto; /* Optional: let height adjust if needed */
-    aspect-ratio: 16 / 9; /* Optional: keeps a nice shape for the main image */
-  }
-
-  .hero__product-card {
-    /* We subtract the gap so they fit perfectly side-by-side */
-    flex: 0 0 calc(50% - 1rem);
-    width: calc(50% - 1rem);
-    margin: 0; /* Clear previous margins */
-  }
-
-  .card__heading {
-    font-size: 1.6rem; /* Slightly smaller text for mobile */
-    flex: 0 0 80%; /* Give heading more room on smaller screens */
-  }
-  .product__logo {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 650px) {
-  html {
-    /* 8px */
-    font-size: 50%;
-  }
-}
-@media (max-width: 400px) {
-  .heading-primary {
-    font-size: 4rem;
-  }
-  .hero__paragragph {
-    font-size: 1.2rem;
-  }
-
-  .marquee__item img {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-}
-@media (max-width: 360px) {
-  html {
-    /* 8px */
-    font-size: 40%;
-  }
-}
-
-/* ========== Marquee ============ */
+/* =============================================== */
+/* ====================MARQUEE SECTION============ */
+/* =============================================== */
 
 .marquee__track {
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  /* 24px gap between items */
   width: max-content;
-  /* Important: allows track to be wider than screen */
   animation: scroll MarqueeDuration linear infinite;
-}
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    /* We move it by exactly half because we will duplicate the content */
-    transform: translateX(-50%);
-  }
 }
 
 .marquee:hover .marquee__track {
-  animation-play-state: paused; /* Optional: pause on hover */
+  animation-play-state: paused;
 }
 
 .marquee__item {
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  /* 24px gap between star and text */
   font-size: 2.4rem;
   line-height: 2rem;
   white-space: nowrap;
-  /* Forces text to stay on one line */
   flex-shrink: 0;
-  /* Prevents items from squishing */
 }
 
 .marquee__item img {
@@ -287,7 +167,9 @@
   color: var(--color-marquee);
 }
 
-/* ======== Slider =========== */
+/* =============================================== */
+/* ====================SLIDER SECTION=============== */
+/* =============================================== */
 
 .category__container {
   display: flex;
@@ -326,11 +208,8 @@
   bottom: 0;
   left: 0;
 
-  /* Sizing */
   width: 100%;
-  /* Spans the full width of the card */
   height: 11.9rem;
-  /* Your defined height */
 
   /* Gradient Background */
   background: linear-gradient(
@@ -341,14 +220,11 @@
     #000909 120.11%
   );
 
-  /* Text Alignment inside the 100px box */
   display: flex;
   align-items: flex-end;
-  /* Pushes text to the bottom of the 100px area */
-  padding: 1.6rem;
-  /* Adds the spacing from the bottom and left */
 
-  /* Typography */
+  padding: 1.6rem;
+
   margin: 0;
   color: #fff;
   font-family: "Roslindale";
@@ -377,7 +253,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 6px; */
 }
 
 /* Ensure the parent has relative positioning for the badge */
@@ -407,92 +282,9 @@
   height: 2rem;
 }
 
-/* ========== Responsive Breakpoints ============ */
-
-/* Large Desktop (1400px) */
-@media (max-width: 1400px) {
-  .category__container {
-    justify-content: center; /* Centers cards if there is extra space */
-    gap: 2rem;
-  }
-
-  .category__card {
-    flex: 0 0 28rem; /* Slightly smaller cards */
-    height: 38rem;
-  }
-}
-
-/* Desktop / Tablet (1200px) */
-@media (max-width: 1200px) {
-  .category__container {
-    overflow-x: auto; /* Enable horizontal touch scroll */
-    padding-bottom: 3rem; /* Space for a scrollbar if visible */
-    scroll-snap-type: x mandatory; /* Smooth snapping effect */
-    -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
-    scrollbar-width: none; /* Hide scrollbar Firefox */
-  }
-
-  /* Hide scrollbar for Chrome/Safari */
-  .category__container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .category__card {
-    flex: 0 0 30.7rem; /* Keep original size but scrollable */
-    scroll-snap-align: start;
-  }
-
-  .category__scroll-badge {
-    width: 12rem;
-    height: 12rem;
-    font-size: 1.8rem;
-  }
-}
-
-/* Tablet (986px) */
-@media (max-width: 986px) {
-  .category__card {
-    flex: 0 0 26rem; /* Smaller cards for tablet */
-    height: 34rem;
-  }
-
-  .category__label {
-    font-size: 2.4rem;
-    height: 10rem;
-  }
-}
-
-/* Mobile (850px) */
-@media (max-width: 850px) {
-  .category__container {
-    gap: 1.6rem;
-  }
-
-  .category__card {
-    flex: 0 0 22rem; /* Even smaller cards */
-    height: 30rem;
-  }
-
-  /* Hide the scroll badge on small mobile to clear the view */
-  .category__scroll-badge {
-    /* Scale down the badge so it fits small screens */
-    width: 10rem;
-    height: 10rem;
-    font-size: 1.4rem;
-    gap: 0.5rem;
-  }
-  .category__scroll-button img {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-  .category__label {
-    font-size: 2rem;
-    padding: 1.2rem;
-  }
-}
-
-/* ========== Tab - Popular choice============ */
-/* Section Container */
+/* =============================================== */
+/* ====================TAB COLLECTION SECTION===== */
+/* =============================================== */
 
 /* Tabs using Flexbox */
 .collection__nav {
@@ -512,7 +304,7 @@
 .tab {
   color: var(--color--tab-text);
   font-family: "Roslindale";
-  letter-spacing: 0;
+  letter-spacing: 0%;
   padding: 1rem 0.5rem;
   cursor: pointer;
   font-size: 1.8rem;
@@ -545,8 +337,8 @@
 
 /* Product Card Styling */
 .product-card__image {
-  width: 307px;
-  height: 400px;
+  width: 30.7rem;
+  height: 40rem;
   background-color: #f9f9f9;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -600,7 +392,6 @@
   color: var(--color-primary);
   font-weight: 400;
   border-bottom: 2px solid var(--color-primary);
-  /* padding-bottom: 2px; */
   font-size: 1.8rem;
   font-family: "Inter";
   line-height: 3.2rem;
@@ -624,67 +415,17 @@
   overflow: hidden;
 }
 
-/* ========== Responsive Breakpoints ============ */
-
-/* Tablet / Small Laptop (1300px) */
-@media (max-width: 1300px) {
-  .collection__grid {
-    /* Switch to 3 columns */
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 100rem;
-    margin: 4.8rem auto;
-    padding: 0 2rem;
-  }
-}
-
-/* Mobile / Small Tablet (850px) */
-@media (max-width: 850px) {
-  .collection__nav {
-    width: 90%; /* Let the nav expand */
-  }
-
-  .collection__tabs {
-    gap: 2rem; /* Reduce spacing between tabs */
-  }
-
-  .tab {
-    font-size: 1.6rem;
-  }
-
-  .collection__grid {
-    /* Switch to 2 columns */
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 3rem;
-  }
-
-  .product-card__image {
-    height: 30rem; /* Slightly shorter images on smaller screens */
-  }
-
-  .product-card__title,
-  .product-card__price {
-    font-size: 1.8rem; /* Scale down typography */
-  }
-}
-
-/* Extra Small Mobile (Optional - 480px) */
-@media (max-width: 480px) {
-  .collection__grid {
-    /* Switch to 1 column */
-    grid-template-columns: 1fr;
-    padding: 0 4rem;
-  }
-}
-/* ================Futura ==============================*/
-/* Note: Ensure 'Roslindale' and 'Inter' fonts are imported via @font-face or Google Fonts */
-
+/* =============================================== */
+/* ====================FUTURA SECTION=============== */
+/* =============================================== */
 .explore-now-badge {
   position: absolute;
   top: 46px;
-  right: 104.59px;
+  right: 34.59px;
+  z-index: 10;
 }
 .futura__container {
+  position: relative;
   padding: 15rem 0;
   display: flex;
   gap: 5.4rem;
@@ -693,7 +434,6 @@
 
 .futura__content {
   flex: 0 1 63.8rem;
-  /* border: 1px solid white; */
   flex-direction: column;
 }
 
@@ -724,18 +464,17 @@
 .futura__link-wrapper {
   display: flex;
   align-items: center;
-  /* Centers arrow vertically with text */
   gap: 8px;
   /* Space between text and arrow */
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .futura__link {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   /* Using px to match your initial spec */
-  line-height: 32px;
+  line-height: 3.2rem;
   color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -743,13 +482,14 @@
 }
 
 .futura__link-icon {
-  width: 20px;
+  width: 2rem;
   /* Adjust based on your design */
-  height: 20px;
+  height: 2rem;
   /* If the SVG is black, this filter makes it white */
-  filter: brightness(0) invert(1);
 }
-
+.futura__link-icon img {
+  width: 100%;
+}
 /* Counter Box Styling */
 .futura__counter-box {
   background-color: #f7f8f7;
@@ -803,29 +543,25 @@
 /* Right Side Measurement Placeholder */
 
 .futura__image-grid {
-  /* border: 1px solid white; */
-  position: relative;
   display: grid;
-  grid-template-columns: 247px 158px;
-  /* The widths of the two visible strips */
-  gap: 24px;
-  /* The dark green gap width */
+  grid-template-columns: 2fr 1fr;
+  gap: 2.4rem;
   width: 60.8rem;
   height: 60.5rem;
 }
 
 .futura__image-col {
   overflow: hidden;
-  /* Clips the image to the column width */
   height: 100%;
 }
 
 .futura__image-col img {
   height: 100%;
-  width: 609px;
+  width: calc(60.8rem);
   /* Full width of the original design */
   object-fit: cover;
   display: block;
+  /* max-width: ; */
 }
 
 /* Align the left part of the image to the left column */
@@ -833,15 +569,25 @@
   object-position: left;
 }
 
-/* Align the right part of the image to the right column */
-.futura__image-col--right img {
-  object-position: right;
+.futura__image-col--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-/* --------------------- */
-/* =======================Why Us Section ====================*/
+.futura__image-col--right img {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+  min-width: unset;
+}
+
+/* =============================================== */
+/* ====================WHY US SECTION============= */
+/* =============================================== */
 .why-us {
-  padding: 120px 0;
+  padding: 120rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -851,7 +597,7 @@
 
 .why-us-grid {
   display: flex;
-  gap: 125px;
+  gap: 12.5rem;
   justify-content: center;
 }
 
@@ -859,7 +605,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
+  max-width: 35rem;
 }
 
 .why-us-icon {
@@ -882,7 +628,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 1.4rem;
   text-align: center;
   margin-bottom: 1.4rem;
 }
@@ -901,66 +647,15 @@
   font-size: 1.8rem;
   line-height: 2.8rem;
   color: var(--text-gray-1);
-  max-width: 350px;
-}
-/* ========== Responsive Breakpoints ============ */
-
-/* Tablet / Small Laptop (1300px) */
-@media (max-width: 1300px) {
-  .why-us {
-    padding: 8rem 2rem; /* Reduced vertical padding */
-    gap: 6rem;
-  }
-
-  .why-us-grid {
-    gap: 4rem; /* Significantly reduced the 125px gap */
-    width: 100%;
-    flex-wrap: wrap; /* Allows items to wrap if needed */
-  }
-
-  .why-us-item {
-    flex: 1; /* Items will share space equally */
-    max-width: 30rem;
-  }
+  max-width: 35rem;
 }
 
-/* Mobile / Small Tablet (850px) */
-@media (max-width: 850px) {
-  .why-us {
-    padding: 6rem 2rem;
-    gap: 4rem;
-  }
-
-  .why-us-grid {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    gap: 5rem; /* Vertical spacing between stacked items */
-  }
-
-  .why-us-item {
-    max-width: 45rem; /* Allow items to be a bit wider when stacked */
-  }
-
-  .why-us-icon {
-    width: 10rem; /* Slightly smaller icons for mobile */
-    height: 10rem;
-    margin-bottom: 2rem;
-  }
-
-  .why-us-content h3 {
-    font-size: 2.2rem;
-  }
-
-  .why-us-content p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-}
-
-/*===================== Contact Section =====================*/
+/* =============================================== */
+/* ====================CONTACT FORM SECTION======= */
+/* =============================================== */
 .contact {
   width: 100%;
-  margin: 104px 0 109px;
+  margin: 10.4rem 0 10.9rem;
   background: var(--color-primary);
   padding: 7rem 0;
 }
@@ -987,7 +682,7 @@
 .contact-heading h2::before {
   position: absolute;
   content: "";
-  right: 100;
+  right: 100px;
   display: inline-block;
   width: 76px;
   height: 80px;
@@ -995,7 +690,6 @@
   background-size: contain;
   margin-left: 32px;
   vertical-align: middle;
-
   left: 60%;
 }
 
@@ -1021,7 +715,7 @@
 
 .contact-heading h2 span {
   display: inline-block;
-  margin-left: 80px;
+  margin-left: 8rem;
 }
 
 .contact-heading p {
@@ -1040,7 +734,7 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 3.2rem;
   width: 100%;
 }
 
@@ -1051,7 +745,7 @@
   color: #c3c5c6;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 2.8rem;
   padding: 1.6rem 3.2rem;
   width: 100%;
@@ -1068,31 +762,30 @@
 }
 
 .form-textarea {
-  height: 185px;
+  height: 18.5rem;
   resize: none;
   position: relative;
 }
 
 .contact-form {
   position: relative;
-  border: 2px solid orange;
 }
 
 .char-count {
   position: absolute;
-  right: 32px;
-  bottom: 16px;
+  right: 3.2rem;
+  bottom: 1.6rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 2rem;
+  line-height: 1.2rem;
   color: #989898;
   pointer-events: none;
 }
 
 .submit-btn {
-  width: 170px;
-  height: 62px;
+  width: 17rem;
+  height: 6.2rem;
   background: transparent;
   border: 1px solid #f4f5f5;
   color: #f4f5f5;
@@ -1113,170 +806,20 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* ========== Responsive Breakpoints ============ */
-
-/* Desktop / Tablet (1300px) */
-@media (max-width: 1300px) {
-  .contact {
-    margin: 8rem 2rem;
-    padding: 6rem 4rem;
-  }
-
-  .contact-content {
-    gap: 4rem;
-    justify-content: center;
-    border: 1px solid white;
-  }
-
-  .contact-heading h2 {
-    border: 1px solid red;
-    font-size: 5.6rem;
-    line-height: 1.2;
-  }
-
-  /* Adjust stars for smaller heading */
-  .contact-heading h2::before {
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    border: 2px solid blue;
-  }
-}
-
-@media (max-width: 976px) {
-  /* --- Hero Section --- */
-  .hero__products {
-    gap: 4rem;
-  }
-
-  .hero__product-main {
-    flex: 0 1 35rem; /* Shrink the main image slightly */
-    width: 35rem;
-  }
-
-  .hero__product-card {
-    flex: 0 1 18rem; /* Shrink side cards */
-  }
-
-  /* --- Collection Grid --- */
-  .collection__grid {
-    /* Move to 2 columns if 3 feels too tight */
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    padding: 0 3rem;
-  }
-
-  /* --- Why Us Section --- */
-  .why-us-grid {
-    gap: 3rem;
-  }
-
-  .why-us-item {
-    max-width: 28rem;
-  }
-
-  /* --- Contact Section --- */
-  .contact-content {
-    gap: 3rem;
-  }
-
-  .contact-heading h2 {
-    font-size: 5rem;
-    line-height: 1.1;
-  }
-
-  /* Adjusting the star icon position for the heading */
-  .contact-heading h2::before {
-    left: 70%;
-    width: 50px;
-    height: 50px;
-  }
-}
-
-/* Tablet / Large Mobile (850px) */
-@media (max-width: 850px) {
-  .contact-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 5rem;
-  }
-
-  .contact-left,
-  .contact-right {
-    flex: 0 1 100%;
-    width: 100%;
-    max-width: 60rem;
-  }
-
-  .contact-heading h2 {
-    font-size: 4.8rem;
-  }
-
-  .contact-heading h2 span {
-    margin-left: 0; /* Resetting the forced margin */
-    display: block;
-  }
-
-  /* Hide or reposition stars if they overlap text too much */
-  .contact-heading h2::before,
-  .contact-heading h2 span::before {
-    display: none;
-  }
-
-  .submit-btn {
-    align-self: center; /* Center button in stacked layout */
-  }
-}
-
-/* Mobile (650px) */
-@media (max-width: 650px) {
-  .contact {
-    padding: 4rem 2rem;
-  }
-
-  .contact-heading h2 {
-    font-size: 3.8rem;
-  }
-
-  .form-input,
-  .form-textarea {
-    padding: 1.2rem 2rem;
-    font-size: 1.6rem;
-  }
-}
-
-/* Small Mobile (400px) */
-@media (max-width: 400px) {
-  .contact-heading h2 {
-    font-size: 3.2rem;
-  }
-
-  .contact-heading p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
-
-  .submit-btn {
-    width: 100%; /* Make button full width on very small screens */
-  }
-}
-
-/* ===================Footer==================== */
+/* =============================================== */
+/* ====================FOOTER SECTION=============== */
+/* =============================================== */
 .footer {
   width: 100%;
-  max-width: 1440px;
+  max-width: 144rem;
   margin: 0 auto;
   background: var(--background);
-  padding: 0 70px;
-  /* padding: 65px 70px 48px; */
+  padding: 0 7rem;
 }
 
 .footer-content {
-  /* border: 1px solid; */
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
   margin-bottom: 4.9rem;
 }
 
@@ -1286,8 +829,8 @@
 }
 
 .footer-logo {
-  width: 103.81px;
-  height: 33.33.41159439086914px;
+  width: 10.3rem;
+  height: 3.3rem;
   margin-bottom: 2.79rem;
   display: block;
   object-fit: contain;
@@ -1303,12 +846,12 @@
 }
 
 .social-icons {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 .social-icons img {
-  width: 114px;
-  height: 22px;
+  width: 11.4rem;
+  height: 2.2rem;
   display: block;
   object-fit: contain;
 }
@@ -1322,7 +865,7 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 .footer-column a {
@@ -1339,7 +882,6 @@
   width: 31.8rem;
   display: flex;
   flex-direction: column;
-  /* margin-right: auto; */
 }
 
 .footer-right h3 {
@@ -1349,12 +891,9 @@
   line-height: 4.6rem;
   color: var(--color-primary-light-3);
   letter-spacing: 0%;
-  /* margin-bottom: 24px; */
 }
 
 .contact-btn {
-  /* width: 228px; */
-  /* height: 62px; */
   align-self: flex-start;
   background: var(--color-primary);
   border: none;
@@ -1407,100 +946,4 @@
   line-height: 3.2rem;
   color: var(--text-gray-1);
   letter-spacing: 0%;
-}
-
-/* ========== Footer Responsive ============ */
-
-/* Desktop / Large Tablet (1300px) */
-@media (max-width: 1300px) {
-  .footer {
-    padding: 6.5rem 4rem 4rem;
-  }
-
-  .footer-left {
-    margin-right: 4rem;
-    width: 30rem;
-  }
-
-  .footer-middle {
-    margin-right: 4rem;
-    gap: 6rem; /* Reduced from 12.7rem */
-  }
-
-  .footer-right {
-    width: auto;
-  }
-}
-
-/* Tablet (976px) */
-@media (max-width: 976px) {
-  .footer-content {
-    flex-wrap: wrap; /* Allows sections to drop down */
-    gap: 4rem;
-  }
-
-  .footer-left {
-    flex: 0 0 100%; /* Logo and description take full width top */
-    margin-right: 0;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-left p {
-    max-width: 50rem;
-    margin-bottom: 3rem;
-  }
-
-  .footer-middle {
-    flex: 1;
-    margin-right: 0;
-    justify-content: flex-start;
-  }
-
-  .footer-right {
-    flex: 1;
-    align-items: flex-start;
-  }
-}
-
-/* Small Tablet / Mobile (850px) */
-@media (max-width: 850px) {
-  .footer-content {
-    flex-direction: column; /* Stack everything vertically */
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-middle {
-    gap: 8rem;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .footer-right {
-    align-items: center;
-    width: 100%;
-  }
-
-  .footer-right h3 {
-    font-size: 2.8rem;
-    line-height: 1.2;
-  }
-
-  .contact-btn {
-    align-self: center; /* Center button on mobile */
-  }
-
-  .footer-bottom {
-    flex-direction: column-reverse; /* Put Copyright at the bottom */
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .footer-links {
-    gap: 3rem;
-  }
 }
