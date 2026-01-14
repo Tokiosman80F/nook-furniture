@@ -5,30 +5,21 @@
   margin: 0 auto;
 }
 
-@media (max-width: 976px) {
-  .container {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 2rem;
-  }
-}
-
 .header {
   height: 4rem;
   margin-top: 2.4rem;
   padding: 0 1.4rem;
 }
 .hero {
-  background: url("/assets/images/vector-landing.svg") no-repeat top;
+  background: url("/assets/images/vector-landing.svg") no-repeat center 90px;
+  width: 100%;
 }
-
 .marquee {
   width: 100%;
   overflow: hidden;
   display: flex;
   border-bottom: 1px solid var(--color-marquee);
   padding: 2.4rem 0;
-  /* background-color: red; */
 }
 
 /* slider */
@@ -55,4 +46,12 @@
   align-items: center;
   gap: 8.8rem;
   background: var(--background);
+}
+
+.footer {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  background: var(--background);
+  padding: 0 7rem;
 }
