@@ -6,9 +6,7 @@
 }
 
 .header {
-  height: 4rem;
   margin-top: 2.4rem;
-  padding: 0 1.4rem;
 }
 .hero {
   background: url("/assets/images/vector-landing.svg") no-repeat center 90px;
