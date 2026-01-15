@@ -360,12 +360,9 @@
   }
 
   .futura__image-grid {
-    width: 50rem;
+    flex: 0 1 50rem;
   }
 
-  .futura__image-col img {
-    width: calc(50rem);
-  }
   .explore-now-badge {
     width: 12rem;
     height: 12rem;
@@ -377,7 +374,6 @@
   }
 }
 
-/* --- Tablet / Large Screen (986px) --- */
 @media (max-width: 1200px) {
   .futura {
     margin-top: 10.3rem;
@@ -391,10 +387,8 @@
   }
 
   .futura__content {
-    flex: unset;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    width: 40rem;
+    /* border: 1px solid; */
   }
 
   .futura__content-text {
@@ -407,9 +401,7 @@
   }
 
   .futura__image-grid {
-    width: 100%;
-    max-width: 70rem;
-    height: 55rem;
+    height: auto;
   }
 
   .futura__image-col img {
@@ -428,15 +420,8 @@
 }
 
 @media (max-width: 1080px) {
-  .futura__container {
-    display: flex;
-    width: 100%;
-  }
-  .futura__content {
-    flex: 0 0 40%;
-  }
   .futura__image-grid {
-    flex: 1;
+    flex: 0 0 1;
   }
 }
 /* --- Small Tablet (850px) --- */
@@ -456,6 +441,14 @@
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+  }
+  .futura__image-grid {
+    width: 100%;
+  }
+  .futura__content {
+    flex: 0 0 33.8rem;
+    width: 100%;
+    height: 50%;
   }
   .explore-now-badge {
     top: 6rem;

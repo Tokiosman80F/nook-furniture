@@ -451,7 +451,6 @@
 
 .futura__content {
   flex: 0 1 63.8rem;
-  /* border: 1px solid; */
   display: flex;
   flex-direction: column;
 }
@@ -465,7 +464,6 @@
   font-family: "Roslindale", serif;
   font-weight: 700;
   font-size: 5.6rem;
-  /* line-height: 1.4; */
   letter-spacing: 0%;
   margin-bottom: 3.2rem;
 }
@@ -474,7 +472,6 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  /* line-height: 3.2; */
   letter-spacing: 0%;
   margin-bottom: 2.4rem;
   color: #f7f8f7;
@@ -492,8 +489,6 @@
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.8rem;
-  /* Using px to match your initial spec */
-  /* line-height: 3.2; */
   color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -511,12 +506,13 @@
 }
 /* Counter Box Styling */
 .futura__counter-box {
+  /* border: 1px solid red; */
   background-color: #f7f8f7;
   color: #00494a;
   display: flex;
   justify-content: space-between;
-  gap: 11.7rem;
-  margin-top: auto;
+  /* gap: 11.7rem; */
+  /* margin-top: auto; */
   padding: 4.2rem 5.6rem;
   position: relative;
   overflow: hidden;
@@ -543,6 +539,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 2.4rem;
+  /* border: 1px solid black; */
 }
 
 .futura__counter-label {
