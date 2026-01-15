@@ -137,12 +137,21 @@
 /* ====================MARQUEE SECTION============ */
 /* =============================================== */
 
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .marquee__track {
   display: flex;
   align-items: center;
   gap: 2.4rem;
   width: max-content;
-  animation: scroll MarqueeDuration linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .marquee:hover .marquee__track {
@@ -178,6 +187,8 @@
   overflow-x: auto;
   scrollbar-width: none;
   width: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .category__container::-webkit-scrollbar {
@@ -440,6 +451,8 @@
 
 .futura__content {
   flex: 0 1 63.8rem;
+  /* border: 1px solid; */
+  display: flex;
   flex-direction: column;
 }
 
@@ -504,7 +517,7 @@
   justify-content: space-between;
   gap: 11.7rem;
   margin-top: auto;
-  padding: 4.8rem 5.6rem;
+  padding: 4.2rem 5.6rem;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -542,7 +555,6 @@
   font-family: "Roslindale", serif;
   font-weight: 400;
   font-size: 4rem;
-  /* line-height: 5.6; */
   letter-spacing: 0%;
 }
 

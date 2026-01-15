@@ -1,3 +1,4 @@
+// logo animation
 const logo = document.querySelector(".product__logo");
 const badge = document.querySelector(".explore-now-badge");
 
@@ -22,45 +23,32 @@ function animate() {
 // Start the loop
 animate();
 
-const container = document.querySelector(".category__container");
-const prevBtn = document.querySelector(".category__scroll-button:first-child");
-const nextBtn = document.querySelector(".category__scroll-button:last-child");
+//-------------- scroll on----------------
+const slider = document.querySelector(".category__container");
 
-nextBtn.addEventListener("click", () => {
-  // 1. Get the first card
-  const firstCard = container.querySelector(".category__card");
+slider.addEventListener(
+  "wheel",
+  (e) => {
+    // Check if the user is scrolling vertically (deltaY)
+    if (e.deltaY !== 0) {
+      const isAtEnd =
+        slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1;
+      const isAtStart = slider.scrollLeft <= 0;
 
-  // 2. Smoothly scroll to the second card
-  container.scrollTo({
-    left: firstCard.offsetWidth + 24, // Card width + gap
-    behavior: "smooth",
-  });
+      // Logic: If we haven't reached the end (scrolling down)
+      // or haven't reached the start (scrolling up), scroll the slider
+      if ((e.deltaY > 0 && !isAtEnd) || (e.deltaY < 0 && !isAtStart)) {
+        e.preventDefault(); // Stop the main page from scrolling down
 
-  // 3. After the animation finish, move the first card to the end
-  // and reset the scroll position instantly
-  setTimeout(() => {
-    container.appendChild(firstCard);
-    container.scrollTo({ left: 0, behavior: "auto" });
-  }, 400); // This timeout should match your CSS transition speed
-});
-
-prevBtn.addEventListener("click", () => {
-  // 1. Get all cards and the last one
-  const cards = container.querySelectorAll(".category__card");
-  const lastCard = cards[cards.length - 1];
-
-  // 2. Move last card to the front instantly
-  container.prepend(lastCard);
-
-  // 3. Temporarily offset the scroll so it doesn't "jump"
-  container.scrollTo({ left: lastCard.offsetWidth + 24, behavior: "auto" });
-
-  // 4. Smoothly scroll back to the new "first" card
-  container.scrollTo({
-    left: 0,
-    behavior: "smooth",
-  });
-});
+        slider.scrollBy({
+          left: e.deltaY * 2, // Multiply for faster/smoother speed
+          behavior: "auto", // Use 'smooth' if you want a gliding effect
+        });
+      }
+    }
+  },
+  { passive: false }
+);
 
 /*--------Marquee--------*/
 const track = document.getElementById("marqueeTrack");
@@ -76,7 +64,7 @@ const speed = 20;
 // 3. Apply the animation via JS to ensure it stays dynamic
 track.style.animation = `scroll ${speed}s linear infinite`;
 
-// popular tab
+//----------- Popular tab-----------
 document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab");
   const products = document.querySelectorAll(".product-card");

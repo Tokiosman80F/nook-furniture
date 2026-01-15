@@ -457,6 +457,10 @@
     align-items: center;
     text-align: center;
   }
+  .explore-now-badge {
+    top: 6rem;
+    right: 45px;
+  }
 }
 
 /* --- Mobile / Small Screen (650px) --- */
@@ -477,8 +481,8 @@
     width: 100%;
   }
   .explore-now-badge {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     top: 1rem;
     right: 6rem;
   }
