@@ -29,15 +29,15 @@
 }
 
 /* Import Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"); */
 
 /* Font Face Declarations */
-@font-face {
+/* @font-face {
   font-family: "Roslindale";
   src: url("https://fonts.googleapis.com/css2?family=Roslindale:wght@400;500;700&display=swap");
   font-weight: 400 700;
   font-style: normal;
-}
+} */
 
 /* css reset */
 
@@ -55,10 +55,54 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+/* ==============================
+   Roslindale Fonts
+   ============================== */
+
+/* Display Medium */
+@font-face {
+  font-family: "Roslindale Display";
+  src: url("../assets/font/Roslindale-DisplayMedium-Testing.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Text Regular */
+@font-face {
+  font-family: "Roslindale Text";
+  src: url("./asset/Roslindale-TextRegular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Text Medium */
+@font-face {
+  font-family: "Roslindale Text";
+  src: url("./asset/Roslindale-TextMedium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Text Bold */
+@font-face {
+  font-family: "Roslindale Text";
+  src: url("./asset/Roslindale-TextBold.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   width: 100%;
-  font-family: "Roslindale", serif;
+  font-size: 1.6rem;
+  font-family: "Roslindale", sans-serif;
+
+  font-family: "Roslindale Variable", sans-serif;
+
   font-weight: 400;
   color: var(--text-primary);
   background-color: var(--background);
