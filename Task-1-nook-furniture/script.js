@@ -21,7 +21,7 @@ function animate() {
 }
 
 // Start the loop
-animate();
+// animate();/
 
 //-------------- scroll on----------------
 const slider = document.querySelector(".category__container");

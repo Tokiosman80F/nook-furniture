@@ -3,12 +3,11 @@
 /* =============================================== */
 .heading-primary {
   font-size: 4.8rem;
-  line-height: 130%;
+  line-height: 1.2916667;
   text-align: center;
-  font-family: "Roslindale Variable Display", sans-serif;
   color: var(--text-primary);
+  font-family: var(--font-roslindale-display);
   font-weight: 500;
-  letter-spacing: 0%;
 }
 
 /* =============================================== */
@@ -54,6 +53,9 @@
   max-width: 84.6rem;
   width: 100%;
   height: 25rem;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
   justify-content: center;
   margin: 5.3rem auto 1.9rem auto;
   text-align: center;
@@ -63,10 +65,9 @@
   font-size: 6.4rem;
   line-height: 1.3;
   text-align: center;
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-display);
   color: var(--text-primary);
   font-weight: 500;
-  letter-spacing: 0%;
 }
 
 .hero__paragragph {
@@ -78,7 +79,6 @@
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.2;
-  padding-top: 4rem;
 }
 
 /* ==================== PRODUCT =============== */
@@ -96,6 +96,7 @@
   width: 26.9rem;
   height: 44.9rem;
   display: flex;
+  gap: 2rem;
   flex-direction: column;
   margin: 3.3rem 0 5.4rem 0;
 }
@@ -113,15 +114,18 @@
 
 .card__content {
   height: 6.4rem;
-  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .card__heading {
+  font-family: var(--font-roslindale-text);
+  font-weight: 400;
   flex: 0 1 21.8rem;
   width: 21.8rem;
-  font-weight: 400;
+  border: 1px solid;
+  height: 100%;
 }
 
 .card__heading-left {
@@ -178,14 +182,14 @@
 /* ====================MARQUEE SECTION============ */
 /* =============================================== */
 
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-50%);
   }
-}
+} */
 
 .marquee__track {
   display: flex;
@@ -203,8 +207,6 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
-  font-size: 2.2rem;
-  line-height: 1.1;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -215,6 +217,10 @@
 }
 
 .marquee__item span {
+  font-size: 2.2rem;
+  line-height: 0.9091;
+  font-family: var(--font-roslindale-text);
+  font-weight: 500;
   color: var(--color-marquee);
 }
 
@@ -257,6 +263,8 @@
 }
 
 .category__label {
+  font-family: var(--font-roslindale-text);
+  font-weight: 400;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -280,10 +288,8 @@
 
   margin: 0;
   color: #fff;
-  font-family: "Roslindale";
   font-size: 2.8rem;
   line-height: 1.14;
-  font-weight: 400;
 }
 
 /* Scroll badge */
@@ -356,13 +362,13 @@
 }
 
 .tab {
+  font-family: var(--font-roslindale-text);
+  font-weight: 400;
   color: var(--color--tab-text);
-  font-family: "Roslindale";
-  letter-spacing: 0%;
-  padding: 0.4rem;
+  padding: 0.3rem;
   cursor: pointer;
   font-size: 1.8rem;
-  line-height: 1.7;
+  line-height: 1.778;
 }
 
 .tab--active {
@@ -417,9 +423,9 @@
 }
 
 .product-card__title {
-  font-family: "Roslindale";
-  font-size: 2rem;
+  font-family: var(--font-roslindale-text);
   font-weight: 700;
+  font-size: 2rem;
   line-height: 1.45;
   padding-bottom: 1.4rem;
   letter-spacing: 0;
@@ -427,10 +433,10 @@
 }
 
 .product-card__price {
-  font-family: "Roslindale";
+  font-family: var(--font-roslindale-text);
+  font-weight: 400;
   font-size: 2rem;
   line-height: 1.45;
-  font-weight: 400;
   letter-spacing: 0;
   color: var(--color-tab-subheading);
   margin: 0;
@@ -451,10 +457,10 @@
   text-decoration: none;
   color: var(--color-primary);
   font-weight: 400;
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
   font-size: 1.8rem;
-  font-family: "Inter";
-  line-height: 1.7;
+  font-family: "Inter", sans-serif;
+  line-height: 1.741;
 }
 .collection__footer img {
   height: 2.4rem;
@@ -519,7 +525,7 @@
 }
 
 .futura__heading {
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-text);
   font-weight: 700;
   font-size: 5.6rem;
   letter-spacing: 0%;
@@ -574,7 +580,7 @@
   justify-content: space-between;
   /* gap: 11.7rem; */
   margin-top: auto;
-  padding: 4.2rem 5.6rem;
+  padding: 4.8rem 5.6rem;
   position: relative;
   overflow: hidden;
   z-index: 10;
@@ -605,12 +611,12 @@
 
 .futura__counter-label {
   font-size: 2.4rem;
-  line-height: 1.66;
+  line-height: 1.667;
   font-weight: 400;
 }
 
 .futura__counter-number {
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-text);
   font-weight: 400;
   font-size: 4rem;
   line-height: 1.4;
@@ -703,10 +709,10 @@
 }
 
 .why-us-content h3 {
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-text);
   font-weight: 400;
   font-size: 2.4rem;
-  line-height: 1.33;
+  line-height: 1.3334;
   color: var(--text-primary);
 }
 
@@ -714,7 +720,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.55;
+  line-height: 1.555;
   color: var(--text-gray-1);
   max-width: 35rem;
 }
@@ -741,10 +747,10 @@
 
 .contact-heading h2 {
   position: relative;
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-text);
   font-weight: 400;
   font-size: 7.2rem;
-  line-height: 1.22;
+  line-height: 1.2223;
   color: #f4f5f5;
   margin-bottom: 2.4rem;
 }
@@ -790,8 +796,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.77;
-  letter-spacing: 0%;
+  line-height: 1.7778;
   color: #d8d8d8;
 }
 
@@ -814,7 +819,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.55;
+  line-height: 1.556;
   padding: 1.6rem 3.2rem;
   width: 100%;
   box-sizing: border-box;
@@ -846,7 +851,6 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  /* line-height: 1.2; */
   color: #989898;
   pointer-events: none;
 }
@@ -901,7 +905,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.55;
+  line-height: 1.556;
   color: var(--text-footer);
   margin-bottom: 5.2rem;
 }
@@ -939,7 +943,7 @@
   text-decoration: none;
   letter-spacing: 0%;
   font-size: 1.8rem;
-  line-height: 1.55;
+  line-height: 1.5556;
 }
 
 .footer-right {
@@ -949,10 +953,10 @@
 }
 
 .footer-right h3 {
-  font-family: "Roslindale", serif;
+  font-family: var(--font-roslindale-text);
   font-weight: 500;
   font-size: 3.2rem;
-  line-height: 1.43;
+  line-height: 1.4375;
   color: var(--color-primary-light-3);
   letter-spacing: 0%;
 }
@@ -992,7 +996,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  /* line-height: 3.2; */
+  line-height: 2;
   color: var(--text-footer);
   letter-spacing: 0%;
 }

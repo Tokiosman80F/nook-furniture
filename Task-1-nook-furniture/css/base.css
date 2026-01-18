@@ -26,18 +26,9 @@
   --text-footer: #5a5e5e; /* footer text | copy right*/
   --border-footer: #9c9e9e; /* footer border */
   --color-card: #d9d9d9; /*landing product card*/
+  --font-roslindale-display: "Roslindale Display", serif;
+  --font-roslindale-text: "Roslindale Text", serif;
 }
-
-/* Import Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"); */
-
-/* Font Face Declarations */
-/* @font-face {
-  font-family: "Roslindale";
-  src: url("https://fonts.googleapis.com/css2?family=Roslindale:wght@400;500;700&display=swap");
-  font-weight: 400 700;
-  font-style: normal;
-} */
 
 /* css reset */
 
@@ -72,7 +63,8 @@ html {
 /* Text Regular */
 @font-face {
   font-family: "Roslindale Text";
-  src: url("./asset/Roslindale-TextRegular.otf") format("truetype");
+  src: url("../assets/font/Roslindale-TextRegular-Testing.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -81,7 +73,8 @@ html {
 /* Text Medium */
 @font-face {
   font-family: "Roslindale Text";
-  src: url("./asset/Roslindale-TextMedium.otf") format("truetype");
+  src: url("../assets/font/Roslindale-TextMedium-Testing.ttf")
+    format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -90,21 +83,39 @@ html {
 /* Text Bold */
 @font-face {
   font-family: "Roslindale Text";
-  src: url("./asset/Roslindale-TextBold.otf") format("truetype");
+  src: url("../assets/font/Roslindale-TextBold-Testing.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
+/* .font-display {
+  font-family: "Roslindale Display", serif;
+  font-weight: 500;
+}
+
+.font-regular {
+  font-family: "Roslindale Text", serif;
+  font-weight: 400;
+}
+
+.font-medium {
+  font-family: "Roslindale Text", serif;
+  font-weight: 500;
+}
+
+.font-bold {
+  font-family: "Roslindale Text", serif;
+  font-weight: 700;
+} */
+
 body {
   width: 100%;
   font-size: 1.6rem;
-  font-family: "Roslindale", sans-serif;
-
-  font-family: "Roslindale Variable", sans-serif;
-
   font-weight: 400;
+  line-height: 1.6;
   color: var(--text-primary);
+  /* font-family: "Roslindale Text", serif; */
   background-color: var(--background);
 }
 li {
